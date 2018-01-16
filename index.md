@@ -37,9 +37,10 @@ supports http(s) network, doesn`t supports view response body in UIWebView or WK
 
 <h3 class="index-h3">Usage</h3>
 
-1. Import WoodPeckeriOS.framework (support iOS8.0 and above) to your Xcode Project.  the framework locates at mac client`s "Help-> App Support" menu.
-2. Startup your Woodpecker mac client.
-3. WoodPeckeriOS.framework will automatically startup and try to connect to mac client. 
+1. Download WoodPeckeriOS.framework [Download](/download.html).
+2. Import WoodPeckeriOS.framework (support iOS8.0 and above) to your Xcode Project.
+3. Startup your Woodpecker mac client.
+4. WoodPeckeriOS.framework will automatically startup and try to connect to mac client. 
 
 ```
 WoodPecker using bonjour service to find mac client`s IP and port, then it connect to mac client using socket automatically.
@@ -50,7 +51,7 @@ you can search mac client or manually setup the IP and port (woodpecker use sock
 <h3 class="index-h3">Plugin support</h3>
 
 **Woodpecker provide a communication channel between mac client and app, and defines the way they talk to each other, according the rule, we can custom a plugin very easily.**
-[create a plugin](/developer.html)
+[create a plugin](/plugin.html)
 <br/>
 <br/>
 
