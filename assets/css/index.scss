@@ -1,0 +1,19 @@
+---
+---
+@import "variables";
+
+.index-section{
+	padding-top:20px;
+}
+
+.index-section span{
+	color: $theme-color;
+	font-size: 22px;
+	padding-left: 4px;
+}
+
+.index-section img{
+	width: 24px;
+	height:24px;
+	margin-bottom: -4px;
+}
