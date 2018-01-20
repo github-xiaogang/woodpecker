@@ -42,6 +42,9 @@ supports http(s) network, doesn`t supports view response body in UIWebView or WK
 3. Startup your Woodpecker mac client.
 4. WoodPeckeriOS.framework will automatically startup and try to connect to mac client. 
 
+you can start with [demo](/download.html).
+
+
 ```
 WoodPecker using bonjour service to find mac client`s IP and port, then it connect to mac client using socket automatically.
 If you want manually setup the IP or need stop the automatic connection, just long press you app using two finger to show the connection page,
@@ -57,8 +60,15 @@ you can search mac client or manually setup the IP and port (woodpecker use sock
 
 
 
+<h3 class="index-h3">Thanks</h3>
 
-
+<a href="https://github.com/mugginsoft/Fragaria">Fragaria</a>, 
+<a href="https://github.com/enormego/egodatabase">EGODatabase</a>, 
+<a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a>, 
+<a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a>
+  
+ 
+  
 
 
 
