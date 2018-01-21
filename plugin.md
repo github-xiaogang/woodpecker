@@ -17,7 +17,11 @@ layout: plugin
 
 
 
-Now I`ll implentation a service called "Echo" to show these process in detail.
+Now We`ll implentation a service called "EchoService" to show these process in detail. 
+
+
+ - [Objective C demo](/download.html)<br/>
+ - [Swift demo](/download.html)
 
 ### 1. Create a service
 
