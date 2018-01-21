@@ -38,10 +38,12 @@ supports http(s) network, doesn`t supports view response body in UIWebView or WK
 <h3 class="index-h3">Usage</h3>
 
 1. Download WoodPeckeriOS.framework [Download](/download.html).
-2. Import WoodPeckeriOS.framework (support iOS8.0 and above, Objective C and Swift) to your Xcode Project.
+2. Import WoodPeckeriOS.framework to your Xcode Project.
 3. Startup your Woodpecker mac client.
 4. WoodPeckeriOS.framework will automatically startup and try to connect to mac client. 
 
+
+support Device and Simulator iOS8.0 and above, Objective C and Swift.
 
 you can start with [demo](/download.html).
 

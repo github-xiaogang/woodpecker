@@ -1,5 +1,6 @@
 ---
-layout: plugin
+layout: subpage
+title: Plugin
 ---
 
 ### WoodPecker provide a communication channel between mac client and app, and defines the way they talk to each other, according the rule, we can custom a plugin very easily.

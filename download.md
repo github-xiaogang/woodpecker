@@ -1,5 +1,6 @@
 ---
-layout: plugin
+layout: subpage
+title: Download
 ---
 
 

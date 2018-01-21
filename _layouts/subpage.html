@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#188BF7">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
-    <link rel="stylesheet" href="{{ '/assets/css/other.css?v=' | append: site.github.build_revision }}">
+    <link rel="stylesheet" href="{{ '/assets/css/subpage.css?v=' | append: site.github.build_revision }}">
   </head>
   <body>
-  <section class="other-page-header">
-    
-  </section>
-  <section class="">
+    <div class="other-page-header">
+      <a href="/index.html"><img class="logo" src="/assets/img/logo.png"></img></a>
+        {{ page.title }}
+    </div>
     <section class="main-content">
       {{ content }}
     </section>
