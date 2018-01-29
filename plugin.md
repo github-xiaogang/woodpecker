@@ -10,7 +10,7 @@ title: Plugin
 
 ## Create a plugin:
 
- 1. Create your service, and implentation it`s action list.
+ 1. Create your service, and implements it`s action list.
 
  2. Register your service.
 
@@ -18,7 +18,7 @@ title: Plugin
 
 
 
-Now We`ll implentation a service called "EchoService" to show these process in detail. 
+Now We`ll implement a service called "EchoService" to show these process in detail. 
 
 
  - [Objective C demo](/download.html)<br/>
@@ -54,7 +54,7 @@ here we named it "adh.Echo", and define an action named "echo".
 }
 
 /*
-this handler will be called on receive a request, which service named "adh.Echo", action named "echo". 
+this handler will be called on receiving a request whose service named "adh.Echo", action named "echo". 
 request parameter could carry a dictionary body and a binary payload.
 and you must call [request finish] or other finsh method to response the request.
 */

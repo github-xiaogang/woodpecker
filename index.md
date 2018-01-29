@@ -22,9 +22,9 @@ projectname: WoodPecker
 	<img src="/assets/img/tool_network.png"/> <span>Network</span>
 </div>
 
-**All network request, all in your sight**
+**All network request, just in your sight**
 ```
-supports http(s) network, doesn`t supports view response body in UIWebView or WKWebView
+support http(s) network, doesn`t support view response body in UIWebView or WKWebView
 ```
 
 <div class="index-section">

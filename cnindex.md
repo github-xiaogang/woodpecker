@@ -8,7 +8,7 @@ projectname: WoodPecker
 
 
 
-<div class="demovideo">
+<div class="cndemovideo">
   <iframe src="http://player.youku.com/embed/XMzM0ODk3Mzc5Mg==" frameborder="0"></iframe>
 </div>
 
