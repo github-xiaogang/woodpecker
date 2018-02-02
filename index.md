@@ -41,15 +41,22 @@ support http(s) network, doesn`t support view response body in UIWebView or WKWe
 
 <h3 class="index-h3">Usage</h3>
 
+support Device and Simulator iOS8.0 and above, Objective C and Swift.
+
+**CocoaPods:**
+
+```
+pod 'WoodPeckeriOS', '~> 1.0.0'
+```
+
+**Manual Setup:**
+
 1. Download WoodPeckeriOS.framework [Download](/download.html).
 2. Import WoodPeckeriOS.framework to your Xcode Project.
 3. Startup your Woodpecker mac client.
 4. WoodPeckeriOS.framework will automatically startup and try to connect to mac client. 
 
-
-support Device and Simulator iOS8.0 and above, Objective C and Swift.
-
-you can start with [demo](/download.html).
+You can start with [demo](/download.html).
 
 
 ```

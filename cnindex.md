@@ -42,13 +42,20 @@ projectname: WoodPecker
 
 <h3 class="index-h3">使用方法</h3>
 
+**CocoaPods:**
+
+支持真机和模拟器iOS8.0及以上，Objective C and Swift.
+
+```
+pod 'WoodPeckeriOS', '~> 1.0.0'
+```
+
+**手动集成:**
+
 1. 下载 [WoodPeckeriOS.framework](/download.html).
 2. 将 WoodPeckeriOS.framework 导入您的项目.
 3. 启动WoodPecker Mac客户端.
 4. WoodPeckeriOS.framework 会自动启动，并尝试连接Mac客户端
-
-
-支持真机和模拟器iOS8.0及以上，Objective C and Swift.
 
 您可以下载 [Demo](/download.html).
 
