@@ -42,9 +42,9 @@ projectname: WoodPecker
 
 <h3 class="index-h3">使用方法</h3>
 
-**CocoaPods:**
-
 支持真机和模拟器iOS8.0及以上，Objective C and Swift.
+
+**CocoaPods:**
 
 ```
 pod 'WoodPeckeriOS', '~> 1.0.0'
