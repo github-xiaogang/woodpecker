@@ -1,6 +1,6 @@
 ---
 layout: subpage
-title: Usage
+title: WoodPecker Usage
 ---
 
 
@@ -23,7 +23,7 @@ pod 'WoodPeckeriOS', '~> 1.0.0'
 
 Once you have imported WoodPeckeriOS.framework to your project, please start WoodPecker App, WoodPeckeriOS.framework will automatically startup and connect to mac client. 
 
-You can start with Demo App <a href="https://github.com/github-xiaogang/woodpecker-demo">Download</a>
+You can start with <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo App</a>
 
 
 ```

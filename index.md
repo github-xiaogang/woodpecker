@@ -39,39 +39,18 @@ support http(s) network, doesn`t support view response body in UIWebView or WKWe
 
 **A simple web console, you can send javascript to debug webview inside app, it was actually a woodpecker plugin**
 
-<h3 class="index-h3">Usage</h3>
-
-support Device and Simulator iOS8.0 and above, Objective C and Swift.
-
-**CocoaPods:**
-
-```
-pod 'WoodPeckeriOS', '~> 1.0.0'
-```
-
-**Manual Setup:**
-
-1. Download WoodPeckeriOS.framework [Download](/download.html).
-2. Import WoodPeckeriOS.framework to your Xcode Project.
-3. Startup your Woodpecker mac client.
-4. WoodPeckeriOS.framework will automatically startup and try to connect to mac client. 
-
-You can start with [demo](/download.html).
-
-
-```
-WoodPecker using bonjour service to find mac client`s IP and port, then it connect to mac client using socket automatically.
-If you want manually setup the IP or need stop the automatic connection, just long press you app using two finger to show the connection page,
-you can search mac client or manually setup the IP and port (woodpecker use socket port 9999).
-```
 
 <h3 class="index-h3">Plugin support</h3>
 
 **Woodpecker provide a communication channel between mac client and app, and defines the way they talk to each other, according the rule, we can custom a plugin very easily.**
 [create a plugin](/plugin.html)
 <br/>
-<br/>
 
+<h3 class="index-h3">Usage</h3>
+
+**Support both real device and simulator iOS8.0+, Objective C and Swift.** [How to use WoodPecker](/usage.html)
+<br/>
+<br/>
 
 
 <h3 class="index-h3">Thanks</h3>

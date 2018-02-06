@@ -40,34 +40,15 @@ projectname: WoodPecker
 
 **一个简单的Web调试器，可以在线让WebView运行javascript代码**
 
-<h3 class="index-h3">使用方法</h3>
-
-支持真机和模拟器iOS8.0及以上，Objective C and Swift.
-
-**CocoaPods:**
-
-```
-pod 'WoodPeckeriOS', '~> 1.0.0'
-```
-
-**手动集成:**
-
-1. 下载 [WoodPeckeriOS.framework](/download.html).
-2. 将 WoodPeckeriOS.framework 导入您的项目.
-3. 启动WoodPecker Mac客户端.
-4. WoodPeckeriOS.framework 会自动启动，并尝试连接Mac客户端
-
-您可以下载 [Demo](/download.html).
-
-
-```
-WoodPecker使用Bonjour服务来查找Mac客户端的IP和端口号，然后通过socket连接。当然你也可以手动设置Mac端IP，或者关闭自动自动连接行为（使用双指长按屏幕任意位置打开设置界面）
-WoodPecker Mac端目前使用固定端口9999
-```
-
 <h3 class="index-h3">插件支持</h3>
 
-**WoodPecker在Mac端和App端提供了一条通信渠道，并定义了一套简单通信规则，按照这套规则，开发者可以非常简单的创建自己的扩展功能**[创建插件](/plugin.html)
+**WoodPecker在Mac端和App端提供了一条通信渠道，并定义了一套简单通信规则，按照这套规则，开发者可以非常简单的创建自己的扩展功能** [创建插件](/plugin.html)
+<br/>
+
+<h3 class="index-h3">使用方法</h3>
+
+**支持真机和模拟器iOS8.0及以上，Objective C and Swift.** [使用WoodPecker](/cnusage.html)
+
 <br/>
 <br/>
 
