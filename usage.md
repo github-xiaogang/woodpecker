@@ -6,8 +6,7 @@ title: WoodPecker Usage
 
 <h3 class="index-h3">Thanks for using WoodPecker！</h3>
 
-To use WoodPecker, you need import WoodPeckeriOS.framework to your project.
-
+To use WoodPecker, you need import WoodPeckeriOS.framework to your project, WoodPeckeriOS.framework will automatically startup and connect to mac client. 
 
 **CocoaPods:**
 
@@ -20,8 +19,6 @@ pod 'WoodPeckeriOS', '~> 1.0.0'
 1. Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
 2. Import WoodPeckeriOS.framework to your Project.
 
-
-Once you have imported WoodPeckeriOS.framework to your project, please start WoodPecker App, WoodPeckeriOS.framework will automatically startup and connect to mac client. 
 
 You can start with <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo App</a>
 
