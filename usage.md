@@ -6,12 +6,14 @@ title: WoodPecker Usage
 
 <h3 class="index-h3">Thanks for using WoodPecker！</h3>
 
+**WoodPecker Supports both real device and simulator iOS8.0+, Objective C and Swift.**
+
 To use WoodPecker, you need import WoodPeckeriOS.framework to your project, WoodPeckeriOS.framework will automatically startup and connect to mac client. 
 
 **CocoaPods:**
 
 ```
-pod 'WoodPeckeriOS', '~> 1.0.0'
+pod 'WoodPeckeriOS'
 ```
 
 **Manual Setup:**
@@ -22,9 +24,4 @@ pod 'WoodPeckeriOS', '~> 1.0.0'
 
 You can start with <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo App</a>
 
-
-```
-WoodPecker using bonjour service to find mac client`s IP and port, then it connect to mac client using socket automatically.
-If you want manually setup the IP or need stop the automatic connection, just long press you app using two finger to show the connection page,
-you can search mac client or manually setup the IP and port (woodpecker use socket port 9999).
-```
+<a href="/connection.html">Has problem with connection ?</a>

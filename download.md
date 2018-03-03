@@ -12,7 +12,7 @@ To use WoodPecker, you need import WoodPeckeriOS.framework to your project.
 **CocoaPods:**
 
 ```
-pod 'WoodPeckeriOS', '~> 1.0.0'
+pod 'WoodPeckeriOS'
 ```
 
 **Manual Setup:**
