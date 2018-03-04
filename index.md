@@ -5,11 +5,11 @@ projectname: WoodPecker
 ---
 
 ## WoodPecker build a communication channel between mac and your app, with powerful, extendable toolset let your app just under your control
+<br/>
 
 <div class="demovideo">
   <iframe src="https://www.youtube.com/embed/aaEdo6kETl0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
-
 
 
 <div class="index-section">
@@ -50,8 +50,10 @@ support http(s) network, doesn`t support view response body in UIWebView or WKWe
 
 **Support both real device and simulator iOS8.0+, Objective C and Swift.** [How to use WoodPecker](/usage.html)
 <br/>
-<br/>
 
+<h3 class="index-h3"><a href="/contact.html">Contact WoodPecker</a></h3>
+<br/> 
+<br/> 
 
 <h3 class="index-h3">Thanks</h3>
 
@@ -61,7 +63,8 @@ support http(s) network, doesn`t support view response body in UIWebView or WKWe
 <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a>,
 <a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a>, 
 
-<br/> 
+
+<hr/>
 <span><a href="/cnindex"> 中文主页 </a></span>
 <br/>
 <br/>

@@ -5,8 +5,7 @@ projectname: WoodPecker
 ---
 
 ## WoodPecker通过与App之间构建一条通信渠道，再通过强大可扩展的工具集，让您轻松掌控应用内部状况。
-
-
+<br/>
 
 <div class="cndemovideo">
   <iframe src="http://player.youku.com/embed/XMzM0ODk3Mzc5Mg==" frameborder="0"></iframe>
@@ -49,10 +48,8 @@ projectname: WoodPecker
 
 **支持真机和模拟器iOS8.0及以上，Objective C and Swift.** [使用WoodPecker](/cnusage.html)
 
+<h3 class="index-h3"><a href="/cncontact.html">联系WoodPecker</a></h3>
 <br/>
-<br/>
-
-
 
 <h3 class="index-h3">致谢</h3>
 
@@ -61,6 +58,7 @@ projectname: WoodPecker
 <a href="https://github.com/enormego/egodatabase">EGODatabase</a>, 
 <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a>,
 <a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a>, 
+
 
 <br/>
 <br/>
