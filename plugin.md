@@ -3,29 +3,29 @@ layout: subpage
 title: Plugin
 ---
 
-### WoodPecker provide a communication channel between mac client and app, and defines the way they talk to each other, according the rule, we can custom a plugin very easily.
+### WoodPecker provides a communication channel between mac client and app, and defines a friendly Api for developer, so we can custom a plugin tool very easily.
 
 
 
 
 ## Create a plugin:
 
- 1. Create your service, and implements it`s action list.
+ 1. Create a service, and implements it`s action list.
 
- 2. Register your service.
+ 2. Register the service.
 
- 3. Use your service at mac client.
+ 3. Use the service at mac client.
 
 
 
-Now We`ll implement a service called "EchoService" to show these process in detail. 
+Now We`ll implement a service called "EchoService" to show these processes in detail. 
 
 
  - [Demo Code](https://github.com/github-xiaogang/woodpecker-demo)
 
 ### 1. Create a service
 
-ADHService represent a service in woodpecker, so we create a subclass of ADHService named "EchoService".
+ADHService class represent a service in woodpecker, so we create a subclass of ADHService named "EchoService".
 
 ```
 @interface EchoService : ADHService
@@ -35,14 +35,14 @@ ADHService represent a service in woodpecker, so we create a subclass of ADHServ
 ```
 
 A service has a name, and has a list of action.
-here we named it "adh.Echo", and define an action named "echo".
+here we named it "adh.EchoService", and define an action named "echo".
 
 ```
 @implementation EchoService
 
 + (NSString *)serviceName
 {
-    return @"adh.Echo";
+    return @"adh.EchoService";
 }
 
 + (NSDictionary *)<NSString *,NSString *>actionList
@@ -53,7 +53,7 @@ here we named it "adh.Echo", and define an action named "echo".
 }
 
 /*
-this handler will be called on receiving a request whose service named "adh.Echo", action named "echo". 
+this handler will be called on receiving a request whose service named "adh.EchoService", action named "echo". 
 request parameter could carry a dictionary body and a binary payload.
 and you must call [request finish] or other finsh method to response the request.
 */

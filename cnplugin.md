@@ -1,31 +1,31 @@
 ---
 layout: subpage
-title: Plugin
+title: 扩展插件
 ---
 
-### WoodPecker provide a communication channel between mac client and app, and defines the way they talk to each other, according the rule, we can custom a plugin very easily.
+### WoodPecker提供了Mac和App之间的通信渠道，并提供了简单的通信Api，开发者可以轻松定制自己的插件工具。
 
 
 
 
-## Create a plugin:
+## 创建插件:
 
- 1. Create your service, and implements it`s action list.
+ 1. 创建service，实现它的动作列表.
 
- 2. Register your service.
+ 2. 注册创建的service
 
- 3. Use your service at mac client.
-
-
-
-Now We`ll implement a service called "EchoService" to show these process in detail. 
+ 3. 在Mac客户端使用service
 
 
- - [Demo Code](https://github.com/github-xiaogang/woodpecker-demo)
 
-### 1. Create a service
+下面我们实现一个名为“EchoService”的service来演示具体步骤。
 
-ADHService represent a service in woodpecker, so we create a subclass of ADHService named "EchoService".
+
+ - [Demo项目](https://github.com/github-xiaogang/woodpecker-demo)
+
+### 1. 创建Service
+
+在Woodpecker中ADHService类代表service对象, 我们创建ADHService的子类EchoService。
 
 ```
 @interface EchoService : ADHService
@@ -34,15 +34,15 @@ ADHService represent a service in woodpecker, so we create a subclass of ADHServ
 
 ```
 
-A service has a name, and has a list of action.
-here we named it "adh.Echo", and define an action named "echo".
+每一个service有名称(name)和它的动作列表(actionList)
+我们EchoService名称设为“adh.EchoService"，并定义一个动作"echo"。
 
 ```
 @implementation EchoService
 
 + (NSString *)serviceName
 {
-    return @"adh.Echo";
+    return @"adh.EchoService";
 }
 
 + (NSDictionary *)<NSString *,NSString *>actionList
@@ -53,9 +53,9 @@ here we named it "adh.Echo", and define an action named "echo".
 }
 
 /*
-this handler will be called on receiving a request whose service named "adh.Echo", action named "echo". 
-request parameter could carry a dictionary body and a binary payload.
-and you must call [request finish] or other finsh method to response the request.
+在App接收到service名为"adh.EchoService"，动作为”echo"的请求时，下面的方法将会被调用
+request参数可以包含一个NSDictionary类型的body和NSData类型的payload
+处理结束后你需要调用request的finish方法来响应请求
 */
 - (void)onRequestEcho: (ADHRequest *)request
 {
@@ -70,9 +70,9 @@ and you must call [request finish] or other finsh method to response the request
 @end
 ```
 
-### 2. Register service
+### 2. 注册创建的Service
 
-before use EchoService, you should register it.
+在使用EchoService之前，你需要先在App注册它
 
 ```
 - (void)viewDidLoad {
@@ -82,42 +82,42 @@ before use EchoService, you should register it.
 }
 ````
 
-### 3. Use service at mac client
+### 3. 在Mac客户端使用创建的Service
 
-There are two way to use a service:
+有两种方法使用Service：
 
- 1. Call service using the mac client`s I/O.
+ 1. 通过Mac客户端的I/O工具来调用App的service
 
- 2. Create a mac web plugin, and call the service in the wap page, the web plugin will appear at the toolbar
+ 2. 在Mac端创建一个web插件，然后在插件中调用service，创建的插件会在Mac客户端的工具栏中显示
 
-I`ll show you in detail.
+下面详细介绍两种方式
 
-#### 3.1 Using the mac client`s I/O
+#### 3.1 在Mac客户端的I/O工具调用Service
 
 ![io1](/assets/img/io1.png)
 
 ![io2](/assets/img/io2.png)
 
-There are four form you should provide:
+你可以填写4个字段：
 
-	Service: which service you want call, here we choose "adh.EchoService".
+	Service: 将要调用的service名称，这里我们选择"adh.EchoService"。
 	
-	Action: which action you want call, here we choose "echo".
+	Action: 将要调用的动作名称，这里我们选择"echo"。
 
-	Body: you can pass a dictionary object(here the dictionary should be a json text) to the request, and you you could fetch it using request.body later, here we fill nothing.
+	Body: 你可以给请求添加一个NSDictionary类型的参数(这里需要填写字典的json字符串) , 在接收方，你可以通过request.body来获取该值，这里我们不填任何内容。
 
-	Payload: you can pass a data payload(here should be a file) to the request, and you could fetch it using request.payload later, here we choose nothing.
+	Payload: 你可以给请求添加一个NSData类型的参数(这里请选择一个文件), 在接收方，你可以通过request.payload获取该值, 这里我们不选择文件。
 
 
-#### 3.2 Create a mac web client plugin
+#### 3.2 创建Mac端web插件使用Service
 
-A web plugin is a bundle stored at the Plugin directory (could be find at the Plugin -> Home menu). 
-A plugin bundle should at least has two files:
+一个web插件实际上是一个在Plugin目录的bundle包（插件目录可以在客户端的Plugin -> Home找到）。
+插件bundle至少应该包含两个文件：
 
-	index.html （the plugin`s index page)
-	icon.png (the icon will show at tool bar)
+	index.html （插件入口文件)
+	icon.png (插件的图标，将在工具栏显示)
 
-in the web page you could call App`s service using the method "callClientApi" defined in Plugin/adh.bundle/adh.js.
+在web插件内，你可以通过调用"callClientApi"方法来调用App的service，（“callClientApi”方法在Plugin/adh.bundle/adh.js中定义）
 
 ``` html
 <!-- in html -->
@@ -158,7 +158,7 @@ function callClientApi(service,action,data,payload,callback)
 }
 
 ```
-Once you finish your web plugin, you could refresh the plugin list using "Plugin -> Reload" menu, your plugin will show in the tool bar.
+在web插件开完后，点击菜单栏的“Plugin -> Reload”来加载插件，加载后插件将在工具栏中显示。（编写时可参考插件目录的Web Console.bundle）
 
 
 
