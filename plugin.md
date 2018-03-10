@@ -117,7 +117,7 @@ A plugin bundle should at least has two files:
 	index.html （the plugin`s index page)
 	icon.png (the icon will show at tool bar)
 
-in the web page you could call App`s service using the method "callClientApi" defined in Plugin/adh.bundle/adh.js.
+in the web page you could call App`s service using the method "adhCallClientApi" (defined in Plugin/adh.bundle/adh.js).
 
 ``` html
 <!-- in html -->
@@ -129,7 +129,7 @@ in the web page you could call App`s service using the method "callClientApi" de
   <script type="text/javascript">
     function callService(){
       //call Echoservice
-      callClientApi('adh.EchoService','echo','','',function (data,payload){
+      adhCallClientApi('adh.EchoService','echo','','',function (data,payload){
 			
       });
     }
@@ -152,7 +152,7 @@ call app service` action
 on response the callback function will be called, the callback could contains a object and a payload depends on your service implentation
 */
 
-function callClientApi(service,action,data,payload,callback)
+function adhCallClientApi(service,action,data,payload,callback)
 {
 	
 }

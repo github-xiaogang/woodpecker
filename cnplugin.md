@@ -117,7 +117,7 @@ request参数可以包含一个NSDictionary类型的body和NSData类型的payloa
 	index.html （插件入口文件)
 	icon.png (插件的图标，将在工具栏显示)
 
-在web插件内，你可以通过调用"callClientApi"方法来调用App的service，（“callClientApi”方法在Plugin/adh.bundle/adh.js中定义）
+在web插件内，你可以通过调用"adhCallClientApi"方法来调用App的service，（在Plugin/adh.bundle/adh.js中定义）
 
 ``` html
 <!-- in html -->
@@ -129,7 +129,7 @@ request参数可以包含一个NSDictionary类型的body和NSData类型的payloa
   <script type="text/javascript">
     function callService(){
       //call Echoservice
-      callClientApi('adh.EchoService','echo','','',function (data,payload){
+      adhCallClientApi('adh.EchoService','echo','','',function (data,payload){
 			
       });
     }
@@ -152,7 +152,7 @@ call app service` action
 on response the callback function will be called, the callback could contains a object and a payload depends on your service implentation
 */
 
-function callClientApi(service,action,data,payload,callback)
+function adhCallClientApi(service,action,data,payload,callback)
 {
 	
 }
