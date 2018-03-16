@@ -1,6 +1,6 @@
 ---
 layout: default
-title: woodpecker
+title: WoodPecker
 projectname: WoodPecker
 ---
 
