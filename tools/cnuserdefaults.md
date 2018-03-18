@@ -7,3 +7,6 @@ title: User Defaults
 
 1. 在Mac端查看，修改App的User Defaults数据，方便、直观。
 
+<div class="cndemovideo">
+  <iframe src="http://player.youku.com/embed/XMzQ3Mjc0MTM0OA==" frameborder="0"></iframe>
+</div>
