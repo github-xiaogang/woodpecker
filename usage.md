@@ -9,6 +9,7 @@ title: WoodPecker Usage
 **WoodPecker Supports both real device and simulator iOS8.0+, Objective C and Swift.**
 
 To use WoodPecker, you need import WoodPeckeriOS.framework to your project, WoodPeckeriOS.framework will automatically startup and connect to mac client. 
+(If you are work the real iOS device, please ensure mac and your device are in the same network.)
 
 **CocoaPods:**
 
