@@ -20,6 +20,7 @@ only in `Debug` configuration [read more](https://guides.cocoapods.org/syntax/po
 ```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
+If app couldn't connect to Mac, please use 'pod update WoodPeckeriOS' to fetch the latest framework
 <hr/>
 
 **Manual Setup:**

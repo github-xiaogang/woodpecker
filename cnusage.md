@@ -6,7 +6,7 @@ title: WoodPecker使用
 
 <h3 class="index-h3">感谢使用 WoodPecker！</h3>
 
-**支持真机和模拟器iOS8.0及以上，Objective C and Swift.**
+**支持真机和模拟器iOS8.0及以上，Objective-C and Swift.**
 
 您只需要将WoodPeckeriOS.framework导入您的项目，WoodPeckeriOS.framework 会自动启动，并尝试连接Mac客户端
 （使用真机时，请确认Mac和手机在同一网络内）
@@ -21,7 +21,7 @@ pod 'WoodPeckeriOS'
 ```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
-如果一直连接不上，请先使用pod update更新本地pod仓库后，再次pod install。
+如果一直连接不上，请使用`pod update WoodPeckeriOS`使用最新版WoodPeckeriOS framework
 
 <hr/>
 
