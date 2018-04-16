@@ -22,8 +22,14 @@ pod 'WoodPeckeriOS'
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
 如果一直连接不上，请使用`pod update WoodPeckeriOS`使用最新版WoodPeckeriOS framework
+<br/>
 
-<hr/>
+**Carthage:**
+
+```
+binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/WoodPeckeriOS-Carthage.json"
+```
+<br/>
 
 **手动集成:**
 
