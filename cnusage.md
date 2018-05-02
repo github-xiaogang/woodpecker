@@ -15,11 +15,11 @@ title: WoodPecker使用
 **CocoaPods:**
 
 ```
-pod 'WoodPeckeriOS'
+pod 'WoodPeckeriOS', >= 1.0.3
 ```
 仅在Debug配置时导入 [参见说明](https://guides.cocoapods.org/syntax/podfile.html#pod)
 ```
-pod 'WoodPeckeriOS', :configurations => ['Debug']
+pod 'WoodPeckeriOS', >= 1.0.3 :configurations => ['Debug']
 ```
 如果一直连接不上，请使用`pod update WoodPeckeriOS`使用最新版WoodPeckeriOS framework
 <br/>
