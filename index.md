@@ -1,10 +1,10 @@
 ---
 layout: default
 title: woodpecker
-projectname: WoodPecker
+projectname: Woodpecker
 ---
 
-## WoodPecker build a communication channel between mac and your app, with powerful, extendable toolset let your app just under your control
+## Woodpecker build a communication channel between mac and your app, with powerful, extendable toolset let your app just under your control
 <br/>
 
 <div class="demovideo">
@@ -54,10 +54,10 @@ support http(s) network, doesn`t support view response body in UIWebView or WKWe
 
 <h3 class="index-h3">Usage</h3>
 
-**Support both real device and simulator iOS8.0+, Objective C and Swift.** [How to use WoodPecker](/usage.html)
+**Support both real device and simulator iOS8.0+, Objective C and Swift.** [How to use Woodpecker](/usage.html)
 <br/>
 
-<h3 class="index-h3"><a href="/contact.html">Contact WoodPecker</a></h3>
+<h3 class="index-h3"><a href="/contact.html">Contact Woodpecker</a></h3>
 <br/> 
 <br/> 
 

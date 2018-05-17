@@ -1,6 +1,6 @@
 ---
 layout: subpage
-title: WoodPecker Plugins
+title: Woodpecker Plugins
 ---
 
 Plugin List：
@@ -11,4 +11,4 @@ Plugin List：
 <br/>
 <br/>
 <hr/>
-I want to [share plugin](/contact.html), learn about [WoodPecker Plugin](/plugin.html)
+I want to [share plugin](/contact.html), learn about [Woodpecker Plugin](/plugin.html)

@@ -1,17 +1,17 @@
 ---
 layout: subpage
-title: WoodPecker Usage
+title: Woodpecker Usage
 ---
 
 
-<h3 class="index-h3">Thanks for using WoodPecker！</h3>
+<h3 class="index-h3">Thanks for using Woodpecker！</h3>
 
-**WoodPecker Supports both real device and simulator iOS8.0+, Objective C and Swift.**
+**Woodpecker Supports both physical device and simulator iOS8.0+, Objective C and Swift.**
 
-To use WoodPecker, you need import WoodPeckeriOS.framework to your project, WoodPeckeriOS.framework will automatically startup and connect to mac client. 
-(If you are work the real iOS device, please ensure mac and your device are in the same network.)
+To use Woodpecker, you need import WoodPeckeriOS.framework to your project, WoodPeckeriOS.framework will automatically launch and connect to mac client. 
+(If you are work physical device, please ensure mac and your device are in the same network.)
 
-**CocoaPods:**
+**1. CocoaPods:**
 
 ```
 pod 'WoodPeckeriOS'
@@ -20,25 +20,28 @@ only in `Debug` configuration [read more](https://guides.cocoapods.org/syntax/po
 ```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
-If app couldn't connect to Mac, please use 'pod update WoodPeckeriOS' to fetch the latest framework
+Use 'pod update WoodPeckeriOS' to update the latest version.
+<br/>
 <br/>
 
-**Carthage:**
+**2. Carthage:**
 
 ```
 binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/WoodPeckeriOS-Carthage.json"
 ```
 <br/>
 
-**Manual Setup:**
+**3. Manual Setup:**
 
 1. Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
 2. Import WoodPeckeriOS.framework to your Project.
 
-If you see error like this:
+<br/>
+
+If you have the following problems:
 
 ```
-dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
+1. dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
 
 Reason: image not found
 ```
@@ -46,9 +49,18 @@ Reason: image not found
 Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 
 <img src="/assets/img/embedframework.png"/>
-<br/>
+
+```
+2. Mac client is always "waiting connect".
+```
+1. please ensure mac and app are in the same wifi
+2. please ensure WoodPeckeriOS.framework was the latest version
+3. <a href="/connection.html">still has connection problem?</a>
+
 <br/>
 
 You can start with <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo App</a>
+<br/>
 
-<a href="/connection.html">Has problem with connection ?</a>
+
+

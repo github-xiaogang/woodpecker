@@ -3,7 +3,7 @@ layout: subpage
 title: Plugin
 ---
 
-### WoodPecker provides a communication channel between mac client and app, and defines a friendly Api for developer, so we can custom a plugin tool very easily.
+### Woodpecker provides a communication channel between mac client and app, and defines a friendly Api for developer, so we can custom a plugin tool very easily.
 
 
 

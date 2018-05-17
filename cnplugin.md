@@ -3,7 +3,7 @@ layout: subpage
 title: 扩展插件
 ---
 
-### WoodPecker提供了Mac和App之间的通信渠道，并提供了简单的通信Api，开发者可以轻松定制自己的插件工具。
+### Woodpecker提供了Mac和App之间的通信渠道，并提供了简单的通信Api，开发者可以轻松定制自己的插件工具。
 
 
 

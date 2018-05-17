@@ -1,10 +1,10 @@
 ---
 layout: subpage
-title: Connection to WoodPecker
+title: Connection to Woodpecker
 ---
 
 
-WoodPecker using bonjour service to find mac client`s IP and port, and connects to mac client automatically.
+Woodpecker using bonjour service to find mac client`s IP and port, and connects to mac client automatically.
 If you want to setup the IP manually, please follow these steps:
 
 1. find mac client` IP at menu "Help -> Local IP Address".

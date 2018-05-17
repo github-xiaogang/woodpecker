@@ -1,6 +1,6 @@
 ---
 layout: subpage
-title: WoodPecker插件
+title: Woodpecker插件
 ---
 
 
@@ -12,5 +12,5 @@ title: WoodPecker插件
 <br/>
 <br/>
 <hr/>
-我要[分享插件](/contact.html)， 了解[WoodPecker插件](/cnplugin.html)
+我要[分享插件](/contact.html)， 了解[Woodpecker插件](/cnplugin.html)
 

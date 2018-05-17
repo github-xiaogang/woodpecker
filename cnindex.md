@@ -1,10 +1,10 @@
 ---
 layout: default
-title: WoodPecker
-projectname: WoodPecker
+title: Woodpecker
+projectname: Woodpecker
 ---
 
-## WoodPecker通过与App之间构建一条通信渠道，再通过强大可扩展的工具集，让您轻松掌控应用内部状况。
+## Woodpecker通过与App之间构建一条通信渠道，再通过强大可扩展的工具集，让您轻松掌控应用内部状况。
 <br/>
 
 <div class="cndemovideo">
@@ -47,14 +47,14 @@ projectname: WoodPecker
 
 <h3 class="index-h3">插件支持</h3>
 
-**WoodPecker在Mac端和App端提供了一条通信渠道，并定义了一套简单通信规则，按照这套规则，开发者可以非常简单的创建自己的扩展功能** [创建插件](/cnplugin.html)
+**Woodpecker在Mac端和App端提供了一条通信渠道，并定义了一套简单通信规则，按照这套规则，开发者可以非常简单的创建自己的扩展功能** [创建插件](/cnplugin.html)
 <br/>
 
 <h3 class="index-h3">使用方法</h3>
 
-**支持真机和模拟器iOS8.0及以上，Objective C and Swift.** [使用WoodPecker](/cnusage.html)
+**支持真机和模拟器iOS8.0及以上，Objective C and Swift.** [使用Woodpecker](/cnusage.html)
 
-<h3 class="index-h3"><a href="/cncontact.html">联系WoodPecker</a></h3>
+<h3 class="index-h3"><a href="/cncontact.html">联系Woodpecker</a></h3>
 <br/>
 
 <h3 class="index-h3">致谢</h3>
