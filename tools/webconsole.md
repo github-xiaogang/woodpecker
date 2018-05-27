@@ -7,6 +7,7 @@ title: Web Console
 
 1. enable you online debug webview;
 2. support UIWebView, WKWebView;
+3. view console.log/info/warn/error message and capture window.onerror event;
 
 <div class="demovideo">
   <iframe src="https://youtu.be/T4USU7S60EU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

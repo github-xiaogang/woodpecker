@@ -7,6 +7,7 @@ title: Web Console
 
 1. 在线调试App内部的webview;
 2. 支持UIWebView和WKWebView;
+3. 查看console日志(log,info,warn,error)，捕捉window.onerror事件;
 
 
 <div class="cndemovideo">
