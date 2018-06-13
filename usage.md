@@ -14,11 +14,11 @@ To use Woodpecker, you need import WoodPeckeriOS.framework to your project, Wood
 **1. CocoaPods:**
 
 ```
-pod 'WoodPeckeriOS'
+pod 'WoodPeckeriOS', '>= 1.0.3'
 ```
 only in `Debug` configuration [read more](https://guides.cocoapods.org/syntax/podfile.html#pod)
 ```
-pod 'WoodPeckeriOS', :configurations => ['Debug']
+pod 'WoodPeckeriOS', '>= 1.0.3', :configurations => ['Debug']
 ```
 Use 'pod update WoodPeckeriOS' to update the latest version.
 <br/>
