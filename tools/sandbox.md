@@ -10,6 +10,7 @@ title: SandBox
 2. upload new file to app;
 3. support many formats, such as plain text, xml, json, js, image, sqlite;
 4. support multiple devices, and multiple apps in the same device;
+5. 💥 file monitor, we can observe file changes such as add, edit, remove in realtime. 
 
 
 <div class="demovideo">
