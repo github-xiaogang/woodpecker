@@ -38,28 +38,30 @@ binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/W
 
 <br/>
 
-If you have the following problems:
+**If you have the following problems:**
 
-```
-1. dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
+> **dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
+Reason: image not found**
 
-Reason: image not found
-```
-
+<br/>
 Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 
 <img src="/assets/img/embedframework.png"/>
+<br/>
+> **Mac client is always "waiting connect"**
 
-```
-2. Mac client is always "waiting connect".
-```
 1. please ensure mac and app are in the same wifi
 2. please ensure WoodPeckeriOS.framework was the latest version
-3. <a href="/connection.html">still has connection problem?</a>
 
 <br/>
+> **I often connect to other's mac.**
 
+ You could make some options to specify which client you'd like to connect, <a href="/connection.html">see advanced usage</a>.
+
+<br/>
 You can start with <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo App</a>
+<br/>
+<br/>
 <br/>
 
 

@@ -1,18 +1,85 @@
 ---
 layout: subpage
-title: 连接Woodpecker
+title: Woodpecker连接
 ---
 
 
-Woodpecker 使用 Bonjour服务查找Mac客户端的ip和端口，并尝试自动连接。
-如果你需要手动设置IP地址，请按下面步骤操作：
+**集成了Woodpecker的App在启动时，会查找同一Wifi下的Mac客户端，并尝试自动连接。**<br/>
+**您可以通过设置，让App只连接特定的电脑：**
 
-1. 在Mac客户端 "Help -> Local IP Address" 菜单找到Mac客户端的IP和端口号。
-2. 然后在App任意位置双指长按，会弹出设置界面。
-3. 点击导航栏右上角的 "Manual" 来添加IP和端口。
-4. 连接刚添加的地址。
+ -  **电脑名称（推荐）** ，例如设置为 “李雷的Mac”，或者“李雷”
+ -  **IP地址**，例如 192.168.1.101:9999
+<br/>
+**设置方法：**
+
+在Xcode项目的**Target > Edit Scheme > Run > Arguments**
+
+![][1]
+
+设置如下参数：
+
+ -  **ADHHostName**  电脑名 如“李雷”（**可以在Woodpecker菜单 Help - Client Info找到**）
+ -  **ADHHostAddress**  ip和端口，如“192.168.1.101:9999”    
+ -  **ADHAutoConnectEnabled**  是否自动连接，默认YES，自动连接
+ -  **ADHShowOnConnectionFailed**  失败时是否弹出设置界面  默认YES (你可以双指长按屏幕，手动弹出设置界面)
+<br/>
+
+> **注意：**<br/>
+1. 设置参数时前面需要添加 “-”，参数名和值之间添加空格，例如： “-ADHHostName 李雷”<br/>
+2. 该设置仅在Debug Scheme下有效，其他Scheme比如AdHoc或InHouse，请参见下面设置<br/>
+3. 确保Debug Scheme底部的Shared选项未勾选（默认Debug Scheme未选中），避免影响合作同事的设置
+
+<br/>
+**如果您需要在非Debug模式使用Woodpecker，并希望设置连接参数，请在应用启动时设置如下：**
 
 
-<div class="cndemovideo">
-  <iframe src="http://player.youku.com/embed/XMzQzNzA4MDk3Mg==" frameborder="0"></iframe>
-</div>
+Objective C
+```
+#import "WoodPeckeriOS/WoodPeckeriOS.h"
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //主机名
+    [[NSUserDefaults standardUserDefaults] setObject:@"李雷" forKey:kADHHostName];
+    //主机地址
+    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.101:9999" forKey:kADHHostAddress];
+    //启动时是否自动连接
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:kADHAutoConnectEnabled];
+    //连接失败时是否弹出设置界面
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:kADHShowOnConnectionFailed];
+}
+```
+Swift
+
+
+```
+import WoodPeckeriOS
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    //主机名
+    UserDefaults.standard.set("李雷", forKey: kADHHostName)
+    //主机地址
+    UserDefaults.standard.set("192.168.1.101:9999", forKey: kADHHostAddress)
+    //启动时是否自动连接
+    UserDefaults.standard.set(NSNumber(value:true), forKey: kADHAutoConnectEnabled)
+    //连接失败时是否弹出设置界面
+    UserDefaults.standard.set(NSNumber(value:false), forKey: kADHShowOnConnectionFailed)
+}   
+```
+<br/>
+
+**可能遇到的问题:**
+```
+Mac端状态一直是waiting connect，连接不上
+```
+1. 确认App和Mac在同一wifi下
+2. 确认App集成的WoodPeckeriOS.framework版本为最新版
+
+如果还有问题，<a href="/cncontact.html">请点击这里</a>
+
+<br/>
+<br/>
+
+
+  [1]: /assets/img/schemecn.png
+
+

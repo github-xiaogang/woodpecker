@@ -36,31 +36,33 @@ binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/W
 
 1. 下载 <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
 2. 导入 WoodPeckeriOS.framework 到您的项目
+
 <br/>
 
-集成可能遇到的问题:
+**可能遇到的问题:**
+> **dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
+Reason: image not found**
 
-```
-1. dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
-
-Reason: image not found
-```
-
+<br/>
 请参考下图将WoodPeckeriOS.framework拖拽到`Build Phases -> Embed Framworks`中。
 
 <img src="/assets/img/embedframework.png"/>
+<br/>
+<br/>
+> **Mac端状态一直是waiting connect，连接不上**
 
-```
-2. Mac端状态一直是waiting connect，连接不上
-```
 1. 确认App和Mac在同一wifi下
 2. 请确认App集成的WoodPeckeriOS.framework版本为最新版
-3. <a href="/cnconnection.html">仍然有问题?</a>
 
 <br/>
+> **经常连接到其他人电脑**
 
+你可以设置只连接特定的电脑，<a href="/cnconnection.html">查看更多设置</a>
+
+<br/>
 您可以下载 <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo</a> 立即体验。
-
+<br/>
+<br/>
 <br/>
 
 

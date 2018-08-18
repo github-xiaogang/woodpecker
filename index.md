@@ -70,11 +70,6 @@ support http(s) network, doesn`t support view response body in UIWebView or WKWe
 <a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a>, 
 <a href="http://www.iconfont.cn/">iconfont</a>
 
-
-<hr/>
-<span><a href="/cnindex"> 中文主页 </a></span>
-<br/>
-<br/>
 <br/>
 
 
