@@ -21,7 +21,7 @@ title: Plugin
 Now We`ll implement a service called "EchoService" to show these processes in detail. 
 
 
- - [Demo Code](https://github.com/github-xiaogang/woodpecker-demo)
+ - [Demo Code](https://github.com/appwoodpecker/woodpecker-ios)
 
 ### 1. Create a service
 

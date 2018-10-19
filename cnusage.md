@@ -28,7 +28,7 @@ pod 'WoodPeckeriOS', :configurations => ['Debug']
 **2. Carthage:**
 
 ```
-binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/WoodPeckeriOS-Carthage.json"
+binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodPeckeriOS-Carthage.json"
 ```
 <br/>
 
@@ -60,7 +60,7 @@ Reason: image not found**
 你可以设置只连接特定的电脑，<a href="/cnconnection.html">查看更多设置</a>
 
 <br/>
-您可以下载 <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo</a> 立即体验。
+您可以下载 <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo</a> 立即体验。
 <br/>
 <br/>
 <br/>

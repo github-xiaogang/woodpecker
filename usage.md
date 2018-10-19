@@ -27,7 +27,7 @@ Use 'pod update WoodPeckeriOS' to update the latest version.
 **2. Carthage:**
 
 ```
-binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/WoodPeckeriOS-Carthage.json"
+binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodPeckeriOS-Carthage.json"
 ```
 <br/>
 
@@ -59,7 +59,7 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
  You could make some options to specify which client you'd like to connect, <a href="/connection.html">see advanced usage</a>.
 
 <br/>
-You can start with <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo App</a>
+You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo App</a>
 <br/>
 <br/>
 <br/>
