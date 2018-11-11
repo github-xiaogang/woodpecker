@@ -28,7 +28,7 @@ pod 'WoodPeckeriOS', :configurations => ['Debug']
 **2. Carthage:**
 
 ```
-binary "https://raw.githubusercontent.com/github-xiaogang/woodpeckeriOS/master/WoodPeckeriOS-Carthage.json"
+binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodPeckeriOS-Carthage.json"
 ```
 <br/>
 
@@ -65,7 +65,7 @@ Reason: image not found**
 1. 请使用仅支持真机的framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, 注意这个framework不支持模拟器设备，大多数情况下建议您使用上面的版本。
 
 <br/>
-您可以下载 <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo</a> 立即体验。
+您可以下载 <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo</a> 立即体验。
 <br/>
 <br/>
 <br/>

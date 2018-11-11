@@ -21,7 +21,7 @@ title: 扩展插件
 下面我们实现一个名为“EchoService”的service来演示具体步骤。
 
 
- - [Demo项目](https://github.com/github-xiaogang/woodpecker-demo)
+ - [Demo项目](https://github.com/appwoodpecker/woodpecker-ios)
 
 ### 1. 创建Service
 
