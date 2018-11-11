@@ -60,6 +60,11 @@ Reason: image not found**
 你可以设置只连接特定的电脑，<a href="/cnconnection.html">查看更多设置</a>
 
 <br/>
+> **Xcode 10 Archive 失败 (i386 bitcode 问题)**
+
+1. 请使用仅支持真机的framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, 注意这个framework不支持模拟器设备，大多数情况下建议您使用上面的版本。
+
+<br/>
 您可以下载 <a href="https://github.com/github-xiaogang/woodpecker-demo">Demo</a> 立即体验。
 <br/>
 <br/>
