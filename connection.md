@@ -7,7 +7,7 @@ title: Woodpecker Connection
 **App that installed Woodpecker will search Mac client in the same network, and connect to them automatically.**<br/>
 **You could make some options to specify which client you'd like to connect.**
 
- -  **Host Name** (Recommended), such as "David's MacBook" or "David"
+ -  **Host Name** (Recommended), such as "David's MacBook" or "David" (Don't forget the quotation marks when contains whitespace character)
  -  **Host Address**, such as 192.168.1.101:9999
 <br/>
 

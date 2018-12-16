@@ -16,11 +16,11 @@ To use Woodpecker, you need import WoodPeckeriOS.framework to your project, Wood
 ```
 pod 'WoodPeckeriOS'
 ```
-Using in the `Debug` configuration only [read more](https://guides.cocoapods.org/syntax/podfile.html#pod)
+`Debug` configuration only [read more](https://guides.cocoapods.org/syntax/podfile.html#pod)
 ```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
-Use 'pod update WoodPeckeriOS' to update the latest version.
+Use `pod update WoodPeckeriOS` to update the latest version.
 <br/>
 <br/>
 
@@ -61,7 +61,7 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 <br/>
 > **Xcode 10 Archive failed (i386 bitcode problem)**
 
-1. please use the device arch only framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, it's full bitcode enabled. But I would suggest you use the full version above in most cases.
+1. please use the device arch only framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, it's full bitcode enabled. But I would suggest you use the full version above in most situations.
 
 <br/>
 You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo App</a>

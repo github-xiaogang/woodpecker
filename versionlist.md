@@ -3,6 +3,13 @@ layout: subpage
 title: Version History
 ---
 
+## 1.1.6
+
+- multi-tab support, now we can work with apps more easier.
+- we can add, remove UserDefaults item now, wow!
+- fix loading problem when there's too much large files.
+- add support for preview multi-line texts better.
+- better user interface for you!
 
 ## 1.0.9
 

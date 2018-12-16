@@ -17,7 +17,7 @@ title: Woodpecker使用
 ```
 pod 'WoodPeckeriOS'
 ```
-仅在Debug配置时导入 [参见说明](https://guides.cocoapods.org/syntax/podfile.html#pod)
+仅在Debug配置使用 [参见说明](https://guides.cocoapods.org/syntax/podfile.html#pod)
 ```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```

@@ -3,6 +3,13 @@ layout: subpage
 title: 更新历史
 ---
 
+## 1.1.6
+
+- 新增多Tab支持，现在您可以更方便的调试多个App
+- UserDefaults新增了添加、删除item功能
+- Sandbox修复文件较多时加载缓慢问题
+- Network JSON格式支持预览多行文本
+- 颜值提升，赶快更新体验吧！
 
 ## 1.0.9
 
