@@ -50,8 +50,10 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 <br/>
 > **Mac client is always "waiting connect"**
 
-1. please ensure mac and app are in the same wifi
-2. please ensure WoodPeckeriOS.framework was the latest version
+1. please ensure mac and app are in the same wifi.
+2. please ensure WoodPeckeriOS.framework was the latest version.
+3. connect to mac client manually, long press your iOS app's screen with two fingers, you'll see the connection page, try search and connect to your mac client.
+4. If it still doesn't work, <a href="/contact.html">click here</a>.
 
 <br/>
 > **I often connect to other's mac.**

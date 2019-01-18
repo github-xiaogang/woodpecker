@@ -13,7 +13,7 @@ projectname: Woodpecker
 
 
 <div class="index-section">
-	<img src="/assets/img/tool_sandbox.png"/> <span><a href="/tools/sandbox.html">SandBox</a></span>
+	<img src="/assets/img/tool_sandbox.png"/> <span><a href="/tools/sandbox.html">Sandbox</a></span>
 </div>
 
 **Has never been easier to read, view, modify sandbox file**

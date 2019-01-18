@@ -21,7 +21,6 @@ title: Woodpecker连接
  -  **ADHHostName**  电脑名 如“李雷”（**可以在Woodpecker菜单 Help - Client Info找到**）
  -  **ADHHostAddress**  ip和端口，如“192.168.1.101:9999”    
  -  **ADHAutoConnectEnabled**  是否自动连接，默认YES，自动连接
- -  **ADHShowOnConnectionFailed**  失败时是否弹出设置界面  默认YES (你可以双指长按屏幕，手动弹出设置界面)
 <br/>
 
 > **注意：**<br/>
@@ -35,34 +34,28 @@ title: Woodpecker连接
 
 Objective C
 ```
-#import "WoodPeckeriOS/WoodPeckeriOS.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //主机名
-    [[NSUserDefaults standardUserDefaults] setObject:@"李雷" forKey:kADHHostName];
+    [[NSUserDefaults standardUserDefaults] setObject:@"李雷" forKey:@"ADHHostName"];
     //主机地址
-    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.101:9999" forKey:kADHHostAddress];
+    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.101:9999" forKey:@"ADHHostAddress"];
     //启动时是否自动连接
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:kADHAutoConnectEnabled];
-    //连接失败时是否弹出设置界面
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:kADHShowOnConnectionFailed];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"ADHAutoConnectEnabled"];
 }
 ```
 Swift
 
 
 ```
-import WoodPeckeriOS
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     //主机名
-    UserDefaults.standard.set("李雷", forKey: kADHHostName)
+    UserDefaults.standard.set("李雷", forKey: "ADHHostName")
     //主机地址
-    UserDefaults.standard.set("192.168.1.101:9999", forKey: kADHHostAddress)
+    UserDefaults.standard.set("192.168.1.101:9999", forKey: "ADHHostAddress")
     //启动时是否自动连接
-    UserDefaults.standard.set(NSNumber(value:true), forKey: kADHAutoConnectEnabled)
-    //连接失败时是否弹出设置界面
-    UserDefaults.standard.set(NSNumber(value:false), forKey: kADHShowOnConnectionFailed)
+    UserDefaults.standard.set(NSNumber(value:true), forKey: "ADHAutoConnectEnabled")
 }   
 ```
 <br/>

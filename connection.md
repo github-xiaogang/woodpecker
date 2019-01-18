@@ -4,7 +4,7 @@ title: Woodpecker Connection
 ---
 
 
-**App that installed Woodpecker will search Mac client in the same network, and connect to them automatically.**<br/>
+**App that installed Woodpecker will search mac clients in the same network, and connect to them automatically.**<br/><br/>
 **You could make some options to specify which client you'd like to connect.**
 
  -  **Host Name** (Recommended), such as "David's MacBook" or "David" (Don't forget the quotation marks when contains whitespace character)
@@ -23,7 +23,6 @@ You could set the following parameters：
  -  **ADHHostName**,  your hostname, such as "David" (**You can find it at Woodpecker's Help - Client Info Menu**)
  -  **ADHHostAddress**,  your host address，such as "192.168.1.101:9999"    
  -  **ADHAutoConnectEnabled**,  whether automatically connect during the app launch，default YES
- -  **ADHShowOnConnectionFailed**,  whether show the setting page when connection failed, default YES (You could show the page manually by two finger long pressing the screen)
 <br/>
 
 > **Tips：**<br/>
@@ -36,34 +35,28 @@ You could set the following parameters：
 
 Objective C
 ```
-#import "WoodPeckeriOS/WoodPeckeriOS.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //host name
-    [[NSUserDefaults standardUserDefaults] setObject:@"David" forKey:kADHHostName];
+    [[NSUserDefaults standardUserDefaults] setObject:@"David" forKey:@"ADHHostName"];
     //host address
-    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.101:9999" forKey:kADHHostAddress];
+    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.101:9999" forKey:@"ADHHostAddress"];
     //enable auto connect
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:kADHAutoConnectEnabled];
-    //not show setting page when failed
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:NO] forKey:kADHShowOnConnectionFailed];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"ADHAutoConnectEnabled"];
 }
 ```
 
 Swift
 
 ```
-import WoodPeckeriOS
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     //host name
-    UserDefaults.standard.set("David", forKey: kADHHostName)
+    UserDefaults.standard.set("David", forKey: "ADHHostName")
     //host address
-    UserDefaults.standard.set("192.168.1.101:9999", forKey: kADHHostAddress)
+    UserDefaults.standard.set("192.168.1.101:9999", forKey: "ADHHostAddress")
     //enable auto connect
-    UserDefaults.standard.set(NSNumber(value:true), forKey: kADHAutoConnectEnabled)
-    //not show setting page when failed
-    UserDefaults.standard.set(NSNumber(value:false), forKey: kADHShowOnConnectionFailed)
+    UserDefaults.standard.set(NSNumber(value:true), forKey: "ADHAutoConnectEnabled")
 }
 ```
 <br/>

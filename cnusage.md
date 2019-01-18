@@ -53,6 +53,8 @@ Reason: image not found**
 
 1. 确认App和Mac在同一wifi下
 2. 请确认App集成的WoodPeckeriOS.framework版本为最新版
+3. 尝试手动连接Mac客户端，双指长按iOS App界面任意位置弹出连接界面，点击底部搜索找到Mac，然后连接即可
+4. 如果仍然有问题，<a href="/cncontact.html">请点击这里</a>
 
 <br/>
 > **经常连接到其他人电脑**
