@@ -54,8 +54,6 @@ projectname: Woodpecker
 
 **Support both real device and simulator iOS8.0+, Objective C and Swift.** [How to use Woodpecker](/usage.html)
 <br/>
-
-<h3 class="index-h3"><a href="/contact.html">Contact Woodpecker</a></h3>
 <br/> 
 <br/> 
 

@@ -53,8 +53,8 @@ projectname: Woodpecker
 <h3 class="index-h3">使用方法</h3>
 
 **支持真机和模拟器iOS8.0及以上，Objective C and Swift.** [使用Woodpecker](/cnusage.html)
-
-<h3 class="index-h3"><a href="/cncontact.html">联系Woodpecker</a></h3>
+<br/>
+<br/>
 <br/>
 
 <h3 class="index-h3">致谢</h3>
