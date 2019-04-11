@@ -67,10 +67,11 @@ Reason: image not found**
 1. 请使用仅支持真机的framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, 注意这个framework不支持模拟器设备，大多数情况下建议您使用上面的版本。
 
 <br/>
-您可以下载 <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo</a> 立即体验。
+您可以下载 <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo</a> 立即体验，或者加入 <a href="https://join.slack.com/t/woodpeckerapp/shared_invite/enQtNTkzNzU1OTAwMDgzLTM3MzdiZDdmZTI2M2EyNDhjYmViNmFmZThmNjM5ZjdmZDFlYjdlNTU5NWU1ZWVhZDU0ZmM5YjlmNjJlYjU1MjI">Slack群</a> 开始讨论
 <br/>
 <br/>
 <br/>
+
 
 
 
