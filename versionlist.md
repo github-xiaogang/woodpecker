@@ -1,19 +1,68 @@
 ---
 layout: subpage
-title: Version History
+title: Changelog
 ---
+
+
+## 1.2.0
+
+- Add new tool Bundle, we can view app's bundle files in 1 second
+- Sandbox could clean cached files, and recognize sqlite files more easier now.  
+
+## 1.1.9
+
+- New tool: View Debug, we can inspect app's view hierarchy and edit attributes online!
+
+## 1.1.8
+
+- Add support for view, edit extension's sandbox files.
+- Add support for view other suite's UserDefault items.
+- Do not show the connection page when failed.
+- Bugs fixed
+
+## 1.1.7
+
+- Bugs fixed
 
 ## 1.1.6
 
-- multi-tab support, now we can work with apps more easier.
-- we can add, remove UserDefaults item now, wow!
-- fix loading problem when there's too much large files.
-- add support for preview multi-line texts better.
-- better user interface for you!
+- Multi-tab support, now we can work with devices and apps more easier.
+- New function for UserDefaults, wen can add, remove item now !
+- Fix loading problem when there's too much large files.
+- Better UI experience for you!
+
+## 1.1.5
+
+- You can free download now，you could use almost all the features free!
+- There're special features for previous paid user and new in-app purchase user.
+
+## 1.1.4
+
+- Fix connection problem between mac and your apps, improve connection stability
+
+## 1.1.3
+
+- New tool: Keychain, you can see keychain items easily, support generic and internet password.
+- Add support for view UILocalNotification before iOS 10.
+
+## 1.1.2
+
+- Add search, remove, and export excel function for database file in Tool Sandbox.
+- Add connection setting options, we can specify which mac client it should connect to.
+- Fix armv7(s) connection problem.
+
+## 1.1.1
+
+- New tool: Localization, help you view localized text and solve localization problem.
+- Add file monitor in Sandbox , we can observe file changes such as add, edit, remove in realtime.
+
+## 1.1.0
+
+- New tool: Console, we can view app's console log now.
 
 ## 1.0.9
 
-- Add a new tool 'Notification', now you can check apns or local notifications without a breakpoint [learn more](/tools/notification.html)
+- New tool: Notification, now you can check apns or local notifications without a breakpoint [learn more](/tools/notification.html)
 - Network add JSON preview for response body
 
 ## 1.0.8
@@ -22,4 +71,40 @@ title: Version History
 
 ## 1.0.7
 
-- Add a new tool 'Controller', enable you view app's controller hierarchy easily.
+- Network now support view JSON body;
+- Network add support for view app's cookie;
+- We can drag files into Sandbox and upload them now!
+
+
+## 1.0.6
+
+- New tool: Controller, help you view app's controller hierarchy
+
+## 1.0.5
+
+- Fix Network tool crash problem
+- Fix macOS 10.12 black background bug
+
+## 1.0.4
+
+- Fix network tool crash problem
+- Add plugin support, developer can share plugins now, so cool!
+
+## 1.0.3
+
+- New tool: Device
+- We can view app's screen content in real time
+- We can view app's environment information, such as, system version, screen resolution, country and language
+
+## 1.0.2
+
+- New tool: UserDefualts, you can view and edit UserDefault items in seconds
+
+## 1.0.1
+
+- Improve connection stability, more stable, more powerful
+- Optimize web console output style
+
+## 1.0.0
+
+- Hello World

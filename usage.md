@@ -66,8 +66,10 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 1. please use the device arch only framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, it's full bitcode enabled. But I would suggest you use the full version above in most situations.
 
 <br/>
-You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios">Demo App</a> or talk with others at 
-<a href="https://join.slack.com/t/woodpeckerapp/shared_invite/enQtNTkzNzU1OTAwMDgzLTM3MzdiZDdmZTI2M2EyNDhjYmViNmFmZThmNjM5ZjdmZDFlYjdlNTU5NWU1ZWVhZDU0ZmM5YjlmNjJlYjU1MjI">Slack</a>
+You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios"><img src="/assets/img/logo_github.png" width="16" heigh="16"/> demo app </a>or talk with others at 
+<a href="https://join.slack.com/t/woodpeckerapp/shared_invite/enQtNTkzNzU1OTAwMDgzLTM3MzdiZDdmZTI2M2EyNDhjYmViNmFmZThmNjM5ZjdmZDFlYjdlNTU5NWU1ZWVhZDU0ZmM5YjlmNjJlYjU1MjI"> 
+	<img src="/assets/img/logo_slack.png" width="16" heigh="16"/> slack
+</a>
 <br/>
 <br/>
 <br/>
