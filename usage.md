@@ -14,10 +14,6 @@ To use Woodpecker, you need import WoodPeckeriOS.framework to your project, Wood
 **1. CocoaPods:**
 
 ```
-pod 'WoodPeckeriOS'
-```
-`Debug` configuration only [read more](https://guides.cocoapods.org/syntax/podfile.html#pod)
-```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
 Use `pod update WoodPeckeriOS` to update the latest version.
@@ -35,6 +31,7 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 1. Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
 2. Import WoodPeckeriOS.framework to your Project.
+3. If you like to use only in Debug configuration, please <a href="/manuallink.html">check this</a>
 
 <br/>
 

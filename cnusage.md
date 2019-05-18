@@ -15,10 +15,6 @@ title: Woodpecker使用
 **1. CocoaPods:**
 
 ```
-pod 'WoodPeckeriOS'
-```
-仅在Debug配置使用 [参见说明](https://guides.cocoapods.org/syntax/podfile.html#pod)
-```
 pod 'WoodPeckeriOS', :configurations => ['Debug']
 ```
 如果需要更新，请使用`pod update WoodPeckeriOS`
@@ -36,6 +32,7 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 1. 下载 <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
 2. 导入 WoodPeckeriOS.framework 到您的项目
+3. 仅在Debug模式下使用，请使用<a href="/cnmanuallink.html">动态链接</a>方式
 
 <br/>
 
