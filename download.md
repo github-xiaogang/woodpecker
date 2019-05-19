@@ -27,7 +27,7 @@ You can start with Demo App <a href="https://github.com/appwoodpecker/woodpecker
 
 
 ```
-Woodpecker using bonjour service to find mac client`s IP and port, then it connect to mac client using socket automatically.
+Woodpecker using bonjour service to find mac client's IP and port, then it connect to mac client using socket automatically.
 If you want manually setup the IP or need stop the automatic connection, just long press you app using two finger to show the connection page,
 you can search mac client or manually setup the IP and port.
 ```

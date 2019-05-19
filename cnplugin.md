@@ -86,17 +86,15 @@ request参数可以包含一个NSDictionary类型的body和NSData类型的payloa
 
 有两种方法使用Service：
 
- 1. 通过Mac客户端的I/O工具来调用App的service
+ 1. 通过Mac客户端的Api工具来调用App的service
 
  2. 在Mac端创建一个web插件，然后在插件中调用service，创建的插件会在Mac客户端的工具栏中显示
 
 下面详细介绍两种方式
 
-#### 3.1 在Mac客户端的I/O工具调用Service
+#### 3.1 在Mac客户端的Api工具调用Service，点击菜单Plugin -> Tool
 
 ![io1](/assets/img/io1.png)
-
-![io2](/assets/img/io2.png)
 
 你可以填写4个字段：
 

@@ -3,6 +3,12 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.1
+
+- BRAND-NEW LOGO！
+- Add support for webview debuging in tool 'View', you can run javascript code online, support both UIWebView and WKWebView
+- Add pin function in tool 'UserDefaults', you can find your item more easier
+- Change the name of tool 'I/O' to 'Logger', you can log file other than the standard NSLog
 
 ## 1.2.0
 

@@ -10,15 +10,14 @@ title: Plugin
 
 ## Create a plugin:
 
- 1. Create a service, and implements it`s action list.
+ 1. Create a service, and implements it's action list.
 
  2. Register the service.
 
  3. Use the service at mac client.
 
 
-
-Now We`ll implement a service called "EchoService" to show these processes in detail. 
+Now We'll implement a service called "EchoService" to show these processes in detail. 
 
 
  - [Demo Code](https://github.com/appwoodpecker/woodpecker-ios)
@@ -86,17 +85,15 @@ before use EchoService, you should register it.
 
 There are two way to use a service:
 
- 1. Call service using the mac client`s I/O.
+ 1. Call service using the mac client's api tool
 
  2. Create a mac web plugin, and call the service in the wap page, the web plugin will appear at the toolbar
 
-I`ll show you in detail.
+I'll show you in detail.
 
-#### 3.1 Using the mac client`s I/O
+#### 3.1 Using the mac client's Api tool, click menu at Plugin -> Tool
 
 ![io1](/assets/img/io1.png)
-
-![io2](/assets/img/io2.png)
 
 There are four form you should provide:
 
@@ -114,10 +111,10 @@ There are four form you should provide:
 A web plugin is a bundle stored at the Plugin directory (could be find at the Plugin -> Home menu). 
 A plugin bundle should at least has two files:
 
-	index.html （the plugin`s index page)
+	index.html （the plugin's index page)
 	icon.png (the icon will show at tool bar)
 
-in the web page you could call App`s service using the method "adhCallClientApi" (defined in Plugin/adh.bundle/adh.js).
+in the web page you could call App's service using the method "adhCallClientApi" (defined in Plugin/adh.bundle/adh.js).
 
 ``` html
 <!-- in html -->
@@ -142,7 +139,7 @@ in the web page you could call App`s service using the method "adhCallClientApi"
 //in adh.bundle/adh.js
 
 /**
-call app service` action
+call app action of the service
 
 @p service: service name
 @p action: action name

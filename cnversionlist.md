@@ -3,6 +3,13 @@ layout: subpage
 title: 更新历史
 ---
 
+## 1.2.1
+
+- 全新LOGO！
+- View工具增加webview在线调试功能，您可以在线执行javascript，支持UIWebView和WKWebView
+- UserDefaults工具增加置顶功能，方便快速找到您想要的
+- 更换I/O工具名称为Logger，除了支持NSLog外，您还可以log文件
+
 ## 1.2.0
 
 - 新增工具Bundle，我们可以快速查看应用Bundle文件
