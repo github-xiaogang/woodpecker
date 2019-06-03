@@ -31,7 +31,7 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 **3. Manual Setup:**
 
 1. Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
-2. Import WoodPeckeriOS.framework to your Project.
+2. Import WoodPeckeriOS.framework to your project.
 3. If you like to use only in Debug configuration, please <a href="/manuallink.html">check this</a>
 
 <br/>

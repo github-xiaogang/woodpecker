@@ -32,7 +32,6 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 1. 下载 <a href="/assets/framework/WoodpeckerMacOS.framework.zip">WoodpeckerMacOS.framework</a>
 2. 导入 WoodpeckerMacOS.framework 到您的项目
-3. 仅在Debug模式下使用，请使用<a href="/cnmanuallink.html">动态链接</a>方式
 
 <br/>
 

@@ -29,8 +29,7 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 **3. Manual Setup:**
 
 1. Download <a href="/assets/framework/WoodpeckerMacOS.framework.zip">WoodpeckerMacOS.framework</a>
-2. Import WoodpeckerMacOS.framework to your Project.
-3. If you like to use only in Debug configuration, please <a href="/manuallink.html">check this</a>
+2. Import WoodpeckerMacOS.framework to your project.
 
 <br/>
 
