@@ -52,7 +52,7 @@ projectname: Woodpecker
 
 <h3 class="index-h3">使用方法</h3>
 
-**支持真机和模拟器iOS8.0及以上，Objective C and Swift.** [使用Woodpecker](/cnusage.html)
+**支持真机和模拟器iOS8.0, macOS10.11 及以上，Objective-C and Swift.** [使用Woodpecker](/cnusage.html)
 <br/>
 <br/>
 <br/>

@@ -4,7 +4,7 @@ title: Woodpecker连接
 ---
 
 
-**集成了Woodpecker的App在启动时，会查找同一Wifi下的Mac客户端，并尝试自动连接。**<br/>
+**集成了Woodpecker framework的App在启动时，会查找同一网络环境内的Woodpecker客户端，并尝试自动连接。**<br/>
 **您可以通过设置，让App只连接特定的电脑：**
 
  -  **电脑名称（推荐）** ，例如设置为 “李雷的Mac”，或者“李雷” (如果包含空格，需要添加双引号"")
@@ -64,8 +64,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 Mac端状态一直是waiting connect，连接不上
 ```
-1. 确认App和Mac在同一wifi下
-2. 确认App集成的WoodPeckeriOS.framework版本为最新版
+1. 确认您的App和Wooodpecker客户端在同一网络环境
+2. 确认您的App集成的Framework为最新版本
 
 如果还有问题，<a href="/cncontact.html">请点击这里</a>
 

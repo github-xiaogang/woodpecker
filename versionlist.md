@@ -3,6 +3,12 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.2
+
+- Add support for Mac apps, we can debug both iOS and MacOS apps in the same time now~
+- Add support for local port setup, you can find it at "Help - Local Info" menu
+- Fix crash in tool UserDefaults
+
 ## 1.2.1
 
 - BRAND-NEW LOGO！

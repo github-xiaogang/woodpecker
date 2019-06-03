@@ -6,10 +6,10 @@ title: Woodpecker使用
 
 <h3 class="index-h3">感谢使用 Woodpecker！</h3>
 
-**Woodpecker支持在真机和模拟器iOS8.0及以上使用，Objective-C and Swift.**
+**Woodpecker支持在真机和模拟器iOS8.0, macOS10.11 及以上使用，Objective-C and Swift.**
 
-您只需要将WoodPeckeriOS.framework导入您的项目，WoodPeckeriOS.framework 会自动启动，并尝试连接Mac客户端
-（使用真机时，请确认Mac和手机在同一网络内）
+在开始前，您需要导入一个framework到您的项目，它会自己启动并连接Woodpecker客户端，如果您使用真机调试，请确认您的应用和Woodpecker在同一网络内。<br/><br/>
+如果您正在开发Mac app，请访问<a href="/cnusagemac.html">Woodpecker for MacOS</a>
 
 
 **1. CocoaPods:**

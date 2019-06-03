@@ -4,7 +4,7 @@ title: Woodpecker Connection
 ---
 
 
-**App that installed Woodpecker will search mac clients in the same network, and connect to them automatically.**<br/><br/>
+**App that integrated Woodpecker's framework will search Woodpecker clients in the same network, and connect to them automatically.**<br/><br/>
 **You could make some options to specify which client you'd like to connect.**
 
  -  **Host Name** (Recommended), such as "David's MacBook" or "David" (Don't forget the quotation marks when contains whitespace character)
@@ -64,8 +64,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 > Mac client's status is always "waiting connect"
 
-1. please ensure mac and app are in the same wifi.
-2. please ensure WoodPeckeriOS.framework was the latest version.
+1. please ensure your app and Woodpecker are in the same network environment.
+2. please check the framework in your app was the latest version.
 
 
 If it still doesn't work, <a href="/contact.html">click here</a>.

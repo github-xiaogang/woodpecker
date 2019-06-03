@@ -3,6 +3,12 @@ layout: subpage
 title: 更新历史
 ---
 
+## 1.2.2
+
+- 支持Mac应用，现在您可以同时调试iOS和Mac应用啦~
+- 增加本地端口号设置，在菜单栏Help - Local Info进行设置
+- 修复UserDefaults偶发闪退，提升稳定性
+
 ## 1.2.1
 
 - 全新LOGO！

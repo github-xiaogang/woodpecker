@@ -6,10 +6,11 @@ title: Woodpecker Usage
 
 <h3 class="index-h3">Thanks for using Woodpecker！</h3>
 
-**Woodpecker Supports both physical device and simulator iOS8.0+, Objective C and Swift.**
+**Woodpecker Supports both physical device and simulator iOS8.0+, Objective-C and Swift.**
 
-To use Woodpecker, you need import WoodPeckeriOS.framework to your project, WoodPeckeriOS.framework will automatically launch and connect to mac client. 
-(If you are work physical device, please ensure mac and your device are in the same network.)
+To use Woodpecker, you need import a framework to your project, then it will start and connect to Woodpecker client automatically. If you are work with physical device, please ensure your app and Woodpecker are in the same network.<br/>
+
+If you're developing a Mac app, please check <a href="/usagemac.html">Woodpecker for MacOS</a>
 
 **1. CocoaPods:**
 

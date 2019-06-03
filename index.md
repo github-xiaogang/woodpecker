@@ -52,7 +52,7 @@ projectname: Woodpecker
 
 <h3 class="index-h3">Usage</h3>
 
-**Support both real device and simulator iOS8.0+, Objective C and Swift.** [How to use Woodpecker](/usage.html)
+**Support both real device and simulator iOS8.0+, macOS10.11+ Objective-C and Swift.** [How to use Woodpecker](/usage.html)
 <br/>
 <br/> 
 <br/> 
