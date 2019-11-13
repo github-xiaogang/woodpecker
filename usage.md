@@ -66,7 +66,8 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 <br/>
 You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios"><img src="/assets/img/logo_github.png" width="16" heigh="16"/> demo app </a>or talk with others at 
 <a href="https://join.slack.com/t/woodpeckerapp/shared_invite/enQtNjMzMTY3MDczMDA4LTM4NTQ5OGRjMTIxZWMxMDdmZmVlNjQ4NjRhZmQ3YTE0NzFkMDBmNGE5NmE2MzRjMjYzZjk2Yzk5OGNjNDUwMTM"> 
-	<img src="/assets/img/logo_slack.png" width="16" heigh="16"/> slack
+	<img src="/assets/img/logo_slack.png" width="16" heigh="16"/> slack <a href="https://t.me/appwoodpecker"> 
+	<img src="/assets/img/logo_tele.png" width="16" heigh="16"/> telegram 
 </a>
 <br/>
 <br/>

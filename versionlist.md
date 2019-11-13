@@ -3,6 +3,17 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.4
+
+- Dark mode support !
+
+## 1.2.3
+
+- Add new tool iCloud, we can browser icloud documents and userdefaults now!
+- Optimize the usage experience of network tool
+- Fix some bugs in Logger tool
+- Fix some crash problem
+
 ## 1.2.2
 
 - Add support for Mac apps, we can debug both iOS and MacOS apps in the same time now~

@@ -3,6 +3,18 @@ layout: subpage
 title: 更新历史
 ---
 
+## 1.2.4
+
+- 支持深色模式
+
+## 1.2.3
+
+- 新增工具iCloud，现在我们可以轻松查看iCloud文件和UserDefaults数据！
+- 优化Network工具使用体验，保留底部上次点击位置
+- 修复Logger工具多个不同App日志显示在同一个页面问题
+- 修复部分用户Keychain不能正常使用问题
+- 修复闪退问题，提升稳定性
+
 ## 1.2.2
 
 - 支持Mac应用，现在您可以同时调试iOS和Mac应用啦~
