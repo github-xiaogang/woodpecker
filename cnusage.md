@@ -73,8 +73,8 @@ Reason: image not found**
 <a href="https://github.com/appwoodpecker/woodpecker-ios">
 	<img src="/assets/img/logo_github.png" width="16" heigh="16"/> demo
 </a> 立即体验，或者加入 
-<a href="https://join.slack.com/t/woodpeckerapp/shared_invite/enQtNjMzMTY3MDczMDA4LTM4NTQ5OGRjMTIxZWMxMDdmZmVlNjQ4NjRhZmQ3YTE0NzFkMDBmNGE5NmE2MzRjMjYzZjk2Yzk5OGNjNDUwMTM">
-	<img src="/assets/img/logo_slack.png" width="16" heigh="16"/> slack群
+<a href="https://t.me/appwoodpecker">
+	<img src="/assets/img/logo_tele.png" width="16" heigh="16"/> telegram 群
 </a> 开始讨论
 <br/>
 <br/>
