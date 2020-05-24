@@ -3,6 +3,11 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.5
+
+- Fix crash when share an image in webview
+- Add device management in mac, we can specify which device could or couldn't connect to us now!
+
 ## 1.2.4
 
 - Dark mode support !

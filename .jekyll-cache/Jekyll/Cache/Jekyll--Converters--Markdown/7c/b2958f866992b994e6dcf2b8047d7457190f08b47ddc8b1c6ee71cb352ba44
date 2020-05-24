@@ -1,0 +1,11 @@
+I"ú<p><strong>Debugging Notifications without any breakpoint</strong></p>
+
+<ol>
+  <li>check received notifications without breakpoint at anywhere, anytime. (support both APNS and local notification)</li>
+  <li>check local notifications in real time.</li>
+  <li>check information about Notification, such as APNS device token, authorization status.</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tipsï¼šthis tool only supports iOS 10+.
+</code></pre></div></div>
+:ET

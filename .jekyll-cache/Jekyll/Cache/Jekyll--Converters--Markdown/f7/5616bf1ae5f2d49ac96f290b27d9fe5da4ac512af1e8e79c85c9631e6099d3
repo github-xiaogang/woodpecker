@@ -1,0 +1,82 @@
+I"b<h3 class="index-h3">Thanks for using Woodpecker！</h3>
+
+<p><strong>Woodpecker Supports both physical device and simulator iOS8.0+, MacOS10.11+, Objective-C and Swift.</strong></p>
+
+<p>To use Woodpecker, you need import WoodpeckerMacOS.framework to your project, WoodpeckerMacOS.framework will automatically launch and connect to Woodpecker client. Please ensure your app and Woodpecker are in the same network.</p>
+
+<p><strong>1. CocoaPods:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodpeckerMacOS', :configurations =&gt; ['Debug']
+</code></pre></div></div>
+<p>Use <code class="highlighter-rouge">pod update WoodpeckerMacOS</code> to update the latest version.
+<br />
+<br /></p>
+
+<p><strong>2. Carthage:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodpeckerMacOS-Carthage.json"
+</code></pre></div></div>
+<p><br /></p>
+
+<p><strong>3. Manual Setup:</strong></p>
+
+<ol>
+  <li>Download <a href="/assets/framework/WoodpeckerMacOS.framework.zip">WoodpeckerMacOS.framework</a></li>
+  <li>Import WoodpeckerMacOS.framework to your project.</li>
+</ol>
+
+<p><br /></p>
+
+<p><strong>If you have the following problems:</strong></p>
+
+<blockquote>
+  <p><strong>dnssd_clientstub ConnectToServer: connect()-&gt; No of tries: 1</strong>
+<strong>dnssd_clientstub ConnectToServer: connect() failed path:/var/run/mDNSResponder Socket:3 Err:-1 Errno:1 Operation not permitted</strong></p>
+</blockquote>
+
+<p><br />
+Please open the network capability as the image shows, If your app is not sandboxed, just disable it later, and don’t forget to disable the capabilities before send to AppStore</p>
+
+<p><img src="/assets/img/macnetwork.png" />
+<br />
+<br /></p>
+
+<blockquote>
+  <p><strong>dyld: Library not loaded: @rpath/WoodpeckerMacOS.framework/WoodpeckerMacOS
+Reason: image not found</strong></p>
+</blockquote>
+
+<p><br />
+Please drag WoodpeckerMacOS.framework to <code class="highlighter-rouge">Build Phases -&gt; Embed Framworks</code>.</p>
+
+<p><img src="/assets/img/embedframeworkmac.png" />
+<br /></p>
+<blockquote>
+  <p><strong>Mac client is always “waiting connect”</strong></p>
+</blockquote>
+
+<ol>
+  <li>please ensure your app and Woodpecker are in the same wifi.</li>
+  <li>please ensure WoodpeckerMacOS.framework was the latest version.</li>
+  <li>connect to Woodpecker client manually, Press the Ctrl and Command key, then double click your mac app’s view, you’ll see the connection page, try search and connect to your Woodpecker client.</li>
+  <li>If it still doesn’t work, <a href="/contact.html">click here</a>.</li>
+</ol>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>I often connect to other’s mac.</strong></p>
+</blockquote>
+
+<p>You could make some options to specify which client you’d like to connect, <a href="/connection.html">see advanced usage</a>.</p>
+
+<p><br />
+<br />
+You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios"><img src="/assets/img/logo_github.png" width="16" heigh="16" /> demo app </a>or talk with others at 
+<a href="https://join.slack.com/t/woodpeckerapp/shared_invite/enQtNjMzMTY3MDczMDA4LTM4NTQ5OGRjMTIxZWMxMDdmZmVlNjQ4NjRhZmQ3YTE0NzFkMDBmNGE5NmE2MzRjMjYzZjk2Yzk5OGNjNDUwMTM"> 
+	<img src="/assets/img/logo_slack.png" width="16" heigh="16" /> slack
+</a>
+<br />
+<br />
+<br /></p>
+
+:ET

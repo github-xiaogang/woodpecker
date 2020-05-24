@@ -1,0 +1,12 @@
+I"Ú<p><strong>A simple web console, you can send javascript to debug webview inside app, it was actually a woodpecker plugin</strong></p>
+
+<ol>
+  <li>enable you online debug webview;</li>
+  <li>support UIWebView, WKWebView;</li>
+  <li>view console.log/info/warn/error message and capture window.onerror event;</li>
+</ol>
+
+<div class="demovideo">
+  <iframe src="https://youtu.be/T4USU7S60EU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+:ET

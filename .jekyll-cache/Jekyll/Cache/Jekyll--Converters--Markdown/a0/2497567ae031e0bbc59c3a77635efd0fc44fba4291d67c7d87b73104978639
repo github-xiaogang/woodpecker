@@ -1,0 +1,12 @@
+I"�<p><strong>一个简单的Web调试器，可以在线让WebView运行javascript代码</strong></p>
+
+<ol>
+  <li>在线调试App内部的webview;</li>
+  <li>支持UIWebView和WKWebView;</li>
+  <li>查看console日志(log,info,warn,error)，捕捉window.onerror事件;</li>
+</ol>
+
+<div class="cndemovideo">
+  <iframe src="http://player.youku.com/embed/XMzQzNzEwODcwNA==" frameborder="0"></iframe>
+</div>
+:ET

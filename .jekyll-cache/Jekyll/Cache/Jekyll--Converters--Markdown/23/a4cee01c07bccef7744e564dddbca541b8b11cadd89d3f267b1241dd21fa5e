@@ -1,0 +1,13 @@
+I"�<p><strong>所有网络请求，尽在眼前</strong></p>
+
+<ol>
+  <li>监控App内的所有http(s)请求;</li>
+  <li>支持查看请求头，参数，表单参数，以及响应头，响应体，支持下载响应体到本地;</li>
+  <li>无需额外设置代理;</li>
+  <li>不支持查看UIWebView/WKWebView网络请求的响应体;</li>
+</ol>
+
+<div class="cndemovideo">
+  <iframe src="http://player.youku.com/embed/XMzQzNzA5ODYzMg==" frameborder="0"></iframe>
+</div>
+:ET

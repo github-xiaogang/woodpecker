@@ -1,0 +1,14 @@
+I"{<p><strong>Has never been easier to read, view, modify sandbox file</strong></p>
+
+<ol>
+  <li>view, modify files in sandbox;</li>
+  <li>upload new file to app;</li>
+  <li>support many formats, such as plain text, xml, json, js, image, sqlite (suffix of sqlite file should be: .db,.sqlite or.database);</li>
+  <li>support multiple devices, and multiple apps in the same device;</li>
+  <li>file monitor, we can observe file changes such as add, edit, remove in realtime.</li>
+</ol>
+
+<div class="demovideo">
+  <iframe src="https://youtu.be/lAoT_A7qc4I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+</div>
+:ET

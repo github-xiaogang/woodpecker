@@ -1,0 +1,25 @@
+I"ﬁ<h3 class="index-h3">Thanks for using WoodpeckerÔºÅ</h3>
+
+<p>To use Woodpecker, you need import WoodPeckeriOS.framework to your project.</p>
+
+<p><strong>CocoaPods:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodPeckeriOS'
+</code></pre></div></div>
+
+<p><strong>Manual Setup:</strong></p>
+
+<ol>
+  <li>Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a></li>
+  <li>Import WoodPeckeriOS.framework to your Project.</li>
+</ol>
+
+<p>Once you have imported WoodPeckeriOS.framework to your project, please start Woodpecker App, WoodPeckeriOS.framework will automatically startup and connect to mac client.</p>
+
+<p>You can start with Demo App <a href="https://github.com/appwoodpecker/woodpecker-ios">Download</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Woodpecker using bonjour service to find mac client's IP and port, then it connect to mac client using socket automatically.
+If you want manually setup the IP or need stop the automatic connection, just long press you app using two finger to show the connection page,
+you can search mac client or manually setup the IP and port.
+</code></pre></div></div>
+:ET

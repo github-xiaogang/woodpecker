@@ -1,0 +1,183 @@
+I"�<h2 id="124">1.2.4</h2>
+
+<ul>
+  <li>支持深色模式</li>
+</ul>
+
+<h2 id="123">1.2.3</h2>
+
+<ul>
+  <li>新增工具iCloud，现在我们可以轻松查看iCloud文件和UserDefaults数据！</li>
+  <li>优化Network工具使用体验，保留底部上次点击位置</li>
+  <li>修复Logger工具多个不同App日志显示在同一个页面问题</li>
+  <li>修复部分用户Keychain不能正常使用问题</li>
+  <li>修复闪退问题，提升稳定性</li>
+</ul>
+
+<h2 id="122">1.2.2</h2>
+
+<ul>
+  <li>支持Mac应用，现在您可以同时调试iOS和Mac应用啦~</li>
+  <li>增加本地端口号设置，在菜单栏Help - Local Info进行设置</li>
+  <li>修复UserDefaults偶发闪退，提升稳定性</li>
+</ul>
+
+<h2 id="121">1.2.1</h2>
+
+<ul>
+  <li>全新LOGO！</li>
+  <li>View工具增加webview在线调试功能，您可以在线执行javascript，支持UIWebView和WKWebView</li>
+  <li>UserDefaults工具增加置顶功能，方便快速找到您想要的</li>
+  <li>更换I/O工具名称为Logger，除了支持NSLog外，您还可以log文件</li>
+</ul>
+
+<h2 id="120">1.2.0</h2>
+
+<ul>
+  <li>新增工具Bundle，我们可以快速查看应用Bundle文件</li>
+  <li>Sandbox增加清除缓存、sqlite文件格式识别、文件修改状态识别等</li>
+</ul>
+
+<h2 id="119">1.1.9</h2>
+
+<ul>
+  <li>在线查看View视图继承，编辑View属性</li>
+  <li>修复bug，提升稳定性</li>
+</ul>
+
+<h2 id="118">1.1.8</h2>
+
+<ul>
+  <li>支持访问Extension的沙盒文件</li>
+  <li>支持访问UserDefaults其他suite内容</li>
+  <li>连接失败不再弹出连接UI，您可以双指长按屏幕弹出</li>
+</ul>
+
+<h2 id="117">1.1.7</h2>
+
+<ul>
+  <li>新增多Tab支持，现在您可以更方便的调试多个App</li>
+  <li>UserDefaults增加添加、删除item功能</li>
+</ul>
+
+<h2 id="116">1.1.6</h2>
+
+<ul>
+  <li>新增多Tab支持，现在您可以更方便的调试多个App</li>
+  <li>UserDefaults新增了添加、删除item功能</li>
+  <li>Sandbox修复文件较多时加载缓慢问题</li>
+  <li>Network JSON格式支持预览多行文本</li>
+  <li>颜值提升，赶快更新体验吧！</li>
+</ul>
+
+<h2 id="115">1.1.5</h2>
+
+<ul>
+  <li>现在可以免费下载了，不用付费也可以使用绝大多数功能！</li>
+  <li>已付费用户和新版内购用户可使用完整功能</li>
+</ul>
+
+<h2 id="114">1.1.4</h2>
+
+<ul>
+  <li>修复App与Mac连接问题，提升稳定性</li>
+</ul>
+
+<h2 id="113">1.1.3</h2>
+
+<ul>
+  <li>新增工具Keychain，轻松访问钥匙串内容，支持generic password和internet password</li>
+  <li>工具Notification优化，增加了对iOS10之前UILocalNotification的展示优化</li>
+</ul>
+
+<h2 id="112">1.1.2</h2>
+
+<ul>
+  <li>工具Sandbox，增加数据库文件的搜索，删除，清空表，导出excel功能</li>
+  <li>增加连接设置项，可设置只连接特定的Mac端</li>
+</ul>
+
+<h2 id="111">1.1.1</h2>
+
+<ul>
+  <li>新增工具Localization，轻松查看，导出应用多语言文本</li>
+  <li>Sandbox增加文件监控功能，实时获取文件添加，编辑啊，删除变化</li>
+</ul>
+
+<h2 id="110">1.1.0</h2>
+
+<ul>
+  <li>新增工具Console，现在我们可以在Mac上查看应用Console日志</li>
+</ul>
+
+<h2 id="109">1.0.9</h2>
+
+<ul>
+  <li>增加工具Notification，无需断点调试Notification <a href="/tools/cnnotification.html">查看更多</a></li>
+  <li>Network对json展示优化</li>
+</ul>
+
+<h2 id="108">1.0.8</h2>
+
+<ul>
+  <li>Web Console支持捕获App内Webview的console.log()系列方法以及window.onerror事件，方便调试App内嵌WebView <a href="/tools/cnwebconsole.html">查看更多</a></li>
+</ul>
+
+<h2 id="107">1.0.7</h2>
+
+<ul>
+  <li>Sandbox增加拖拽功能，您可以轻松上传文件到App</li>
+  <li>Network增加json数据展示</li>
+</ul>
+
+<h2 id="106">1.0.6</h2>
+
+<ul>
+  <li>新增工具Controller，开发者可以可视化查看应用Controller层级，Enjoy!</li>
+</ul>
+
+<h2 id="105">1.0.5</h2>
+
+<ul>
+  <li>修复Network偶发闪退问题，提升稳定性</li>
+  <li>修复macOS 10.12用户出现黑色背景问题</li>
+</ul>
+
+<h2 id="104">1.0.4</h2>
+
+<ul>
+  <li>修复Network偶发闪退问题，提升稳定性</li>
+  <li>开放插件列表，开发者可以分享自己的插件，Cool!</li>
+</ul>
+
+<h2 id="103">1.0.3</h2>
+
+<ul>
+  <li>新增工具：Device，帮助查看App运行时环境信息
+    <ol>
+      <li>实时同步App界面</li>
+      <li>查看App系统版本，屏幕分辨率，所在区域，使用语言等。</li>
+      <li>新功能有彩蛋哦~~</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="102">1.0.2</h2>
+
+<ul>
+  <li>新增工具：UserDefaults，帮你轻松查看，修改User Defaults数据</li>
+</ul>
+
+<h2 id="101">1.0.1</h2>
+
+<ul>
+  <li>稳定性提升</li>
+  <li>Web Console样式优化</li>
+</ul>
+
+<h2 id="100">1.0.0</h2>
+
+<ul>
+  <li>Hello World</li>
+</ul>
+:ET

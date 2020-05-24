@@ -74,7 +74,7 @@ Reason: image not found**
 	<img src="/assets/img/logo_github.png" width="16" heigh="16"/> demo
 </a> 立即体验，或者加入 
 <a href="https://t.me/appwoodpecker">
-	<img src="/assets/img/logo_tele.png" width="16" heigh="16"/> telegram 群
+	<img src="/assets/img/logo_tele.png" width="16" heigh="16"/> telegram群
 </a> 开始讨论
 <br/>
 <br/>

@@ -1,0 +1,158 @@
+I"�<h3 id="woodpecker提供了mac和app之间的通信渠道并提供了简单的通信api开发者可以轻松定制自己的插件工具">Woodpecker提供了Mac和App之间的通信渠道，并提供了简单的通信Api，开发者可以轻松定制自己的插件工具。</h3>
+
+<h2 id="创建插件">创建插件:</h2>
+
+<ol>
+  <li>
+    <p>创建service，实现它的动作列表.</p>
+  </li>
+  <li>
+    <p>注册创建的service</p>
+  </li>
+  <li>
+    <p>在Mac客户端使用service</p>
+  </li>
+</ol>
+
+<p>下面我们实现一个名为“EchoService”的service来演示具体步骤。</p>
+
+<ul>
+  <li><a href="https://github.com/appwoodpecker/woodpecker-ios">Demo项目</a></li>
+</ul>
+
+<h3 id="1-创建service">1. 创建Service</h3>
+
+<p>在Woodpecker中ADHService类代表service对象, 我们创建ADHService的子类EchoService。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface EchoService : ADHService
+
+@end
+
+</code></pre></div></div>
+
+<p>每一个service有名称(name)和它的动作列表(actionList)
+我们EchoService名称设为“adh.EchoService”，并定义一个动作”echo”。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation EchoService
+
++ (NSString *)serviceName
+{
+    return @"adh.EchoService";
+}
+
++ (NSDictionary *)&lt;NSString *,NSString *&gt;actionList
+{
+    return @{
+            	@"echo" : @selector(onRequestEcho:), 
+            };
+}
+
+/*
+在App接收到service名为"adh.EchoService"，动作为”echo"的请求时，下面的方法将会被调用
+request参数可以包含一个NSDictionary类型的body和NSData类型的payload
+处理结束后你需要调用request的finish方法来响应请求
+*/
+- (void)onRequestEcho: (ADHRequest *)request
+{
+    NSDictioanry * body = request.body;
+    NSData * payload = request.payload;
+    /**
+        your code
+    */
+    [request finish];
+}
+
+@end
+</code></pre></div></div>
+
+<h3 id="2-注册创建的service">2. 注册创建的Service</h3>
+
+<p>在使用EchoService之前，你需要先在App注册它</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [[ADHOrganizer organizer] registerService:[EchoService service]];
+}
+</code></pre></div></div>
+
+<h3 id="3-在mac客户端使用创建的service">3. 在Mac客户端使用创建的Service</h3>
+
+<p>有两种方法使用Service：</p>
+
+<ol>
+  <li>
+    <p>通过Mac客户端的Api工具来调用App的service</p>
+  </li>
+  <li>
+    <p>在Mac端创建一个web插件，然后在插件中调用service，创建的插件会在Mac客户端的工具栏中显示</p>
+  </li>
+</ol>
+
+<p>下面详细介绍两种方式</p>
+
+<h4 id="31-在mac客户端的api工具调用service点击菜单plugin---tool">3.1 在Mac客户端的Api工具调用Service，点击菜单Plugin -&gt; Tool</h4>
+
+<p><img src="/assets/img/io1.png" alt="io1" /></p>
+
+<p>你可以填写4个字段：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Service: 将要调用的service名称，这里我们选择"adh.EchoService"。
+
+Action: 将要调用的动作名称，这里我们选择"echo"。
+
+Body: 你可以给请求添加一个NSDictionary类型的参数(这里需要填写字典的json字符串) , 在接收方，你可以通过request.body来获取该值，这里我们不填任何内容。
+
+Payload: 你可以给请求添加一个NSData类型的参数(这里请选择一个文件), 在接收方，你可以通过request.payload获取该值, 这里我们不选择文件。
+</code></pre></div></div>
+
+<h4 id="32-创建mac端web插件使用service">3.2 创建Mac端web插件使用Service</h4>
+
+<p>一个web插件实际上是一个在Plugin目录的bundle包（插件目录可以在客户端的Plugin -&gt; Home找到）。
+插件bundle至少应该包含两个文件：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.html （插件入口文件)
+icon.png (插件的图标，将在工具栏显示)
+</code></pre></div></div>
+
+<p>在web插件内，你可以通过调用”adhCallClientApi”方法来调用App的service，（在Plugin/adh.bundle/adh.js中定义）</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- in html --&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"../adh.bundle/adhjs.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="kd">function</span> <span class="nx">callService</span><span class="p">(){</span>
+      <span class="c1">//call Echoservice</span>
+      <span class="nx">adhCallClientApi</span><span class="p">(</span><span class="dl">'</span><span class="s1">adh.EchoService</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">echo</span><span class="dl">'</span><span class="p">,</span><span class="dl">''</span><span class="p">,</span><span class="dl">''</span><span class="p">,</span><span class="kd">function</span> <span class="p">(</span><span class="nx">data</span><span class="p">,</span><span class="nx">payload</span><span class="p">){</span>
+			
+      <span class="p">});</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//in adh.bundle/adh.js</span>
+
+<span class="cm">/**
+call app service` action
+
+@p service: service name
+@p action: action name
+@p data: object that could be jsonfy
+@p payload: binary data
+
+on response the callback function will be called, the callback could contains a object and a payload depends on your service implentation
+*/</span>
+
+<span class="kd">function</span> <span class="nx">adhCallClientApi</span><span class="p">(</span><span class="nx">service</span><span class="p">,</span><span class="nx">action</span><span class="p">,</span><span class="nx">data</span><span class="p">,</span><span class="nx">payload</span><span class="p">,</span><span class="nx">callback</span><span class="p">)</span>
+<span class="p">{</span>
+	
+<span class="p">}</span>
+
+</code></pre></div></div>
+<p>在web插件开完后，点击菜单栏的“Plugin -&gt; Reload”来加载插件，加载后插件将在工具栏中显示。（编写时可参考插件目录的Web Console.bundle）</p>
+
+:ET

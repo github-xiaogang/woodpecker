@@ -1,0 +1,78 @@
+I"p<p><strong>App that integrated Woodpecker’s framework will search Woodpecker clients in the same network, and connect to them automatically.</strong><br /><br />
+<strong>You could make some options to specify which client you’d like to connect.</strong></p>
+
+<ul>
+  <li><strong>Host Name</strong> (Recommended), such as “David’s MacBook” or “David” (Don’t forget the quotation marks when contains whitespace character)</li>
+  <li><strong>Host Address</strong>, such as 192.168.1.101:9999
+<br /></li>
+</ul>
+
+<p><strong>How to set：</strong></p>
+
+<p>Open your Xcode project, and navigate to <strong>Target &gt; Edit Scheme &gt; Run &gt; Arguments</strong></p>
+
+<p><img src="/assets/img/scheme.png" alt="" /></p>
+
+<p>You could set the following parameters：</p>
+
+<ul>
+  <li><strong>ADHHostName</strong>,  your hostname, such as “David” (<strong>You can find it at Woodpecker’s Help - Client Info Menu</strong>)</li>
+  <li><strong>ADHHostAddress</strong>,  your host address，such as “192.168.1.101:9999”</li>
+  <li><strong>ADHAutoConnectEnabled</strong>,  whether automatically connect during the app launch，default YES
+<br /></li>
+</ul>
+
+<blockquote>
+  <p><strong>Tips：</strong><br /></p>
+  <ol>
+    <li>Don’t forget the “-” before parameter name, and  the space character between name and value ，such as “-ADHHostName David”.<br /></li>
+    <li>It only works in the Debug Scheme，other schemes such as ‘AdHoc’ or ‘InHouse’, please see the document in the below.<br /></li>
+    <li>You should make sure the ‘Shared” option is not checked, or it will affects your team members` setting.</li>
+  </ol>
+</blockquote>
+
+<p><br />
+<strong>If you need to use Woodpecker not only in debug mode, and need to set the options, please do the following during app launch:</strong></p>
+
+<p>Objective C</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //host name
+    [[NSUserDefaults standardUserDefaults] setObject:@"David" forKey:@"ADHHostName"];
+    //host address
+    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.101:9999" forKey:@"ADHHostAddress"];
+    //enable auto connect
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"ADHAutoConnectEnabled"];
+}
+</code></pre></div></div>
+
+<p>Swift</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {
+    //host name
+    UserDefaults.standard.set("David", forKey: "ADHHostName")
+    //host address
+    UserDefaults.standard.set("192.168.1.101:9999", forKey: "ADHHostAddress")
+    //enable auto connect
+    UserDefaults.standard.set(NSNumber(value:true), forKey: "ADHAutoConnectEnabled")
+}
+</code></pre></div></div>
+<p><br />
+<strong>If you have the following problems during connection:</strong></p>
+
+<blockquote>
+  <p>Mac client’s status is always “waiting connect”</p>
+</blockquote>
+
+<ol>
+  <li>please ensure your app and Woodpecker are in the same network environment.</li>
+  <li>please check the framework in your app was the latest version.</li>
+</ol>
+
+<p>If it still doesn’t work, <a href="/contact.html">click here</a>.</p>
+
+<p><br />
+<br /></p>
+
+:ET
