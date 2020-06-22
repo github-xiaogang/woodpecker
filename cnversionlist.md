@@ -3,6 +3,11 @@ layout: subpage
 title: 更新历史
 ---
 
+## 1.2.6
+
+- 新增工具State Master，帮助我们快速备份和恢复App数据，赶紧试试吧~
+- 优化模拟器和usb连接
+
 ## 1.2.5
 
 - 修复framework导致WebView分享图片等闪退问题

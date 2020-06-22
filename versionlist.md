@@ -3,6 +3,11 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.6
+
+- Add new tool State Master，We can save and restore app's data with one click!
+- Optimize simulator and usb devices connection
+
 ## 1.2.5
 
 - Fix crash when share an image in webview
