@@ -3,6 +3,11 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.7
+
+- New home page
+- Add new tool Utility, which will provides many productive tools in the future
+
 ## 1.2.6
 
 - Add new tool State Master，We can save and restore app's data with one click!

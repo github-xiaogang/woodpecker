@@ -31,13 +31,6 @@ projectname: Woodpecker
 **Monitor http(s) request, without proxy setup needed**
 
 <div class="index-section">
-	<img src="/assets/img/tool_webconsole.png"/> <span><a href="/tools/webconsole.html">Web Console</a></span>
-</div>
-
-**Run javascript in UIWebView or WKWebview online**
-
-
-<div class="index-section">
 	<img src="/assets/img/tool_io.png"/> <span><a href="/tools/io.html">I/O</a></span>
 </div>
 	
@@ -47,12 +40,12 @@ projectname: Woodpecker
 <h3 class="index-h3">Plugin support</h3>
 
 **Woodpecker provide a communication channel between mac client and app, and defines the way they talk to each other, according the rule, we can custom a plugin very easily.**
-[create a plugin](/plugin.html)
+[Learn more.](/plugin.html)
 <br/>
 
 <h3 class="index-h3">Usage</h3>
 
-**Support both real device and simulator iOS8.0+, macOS10.11+ Objective-C and Swift.** [How to use Woodpecker](/usage.html)
+**Support both real device and simulator iOS8.0+, macOS10.11+ Objective-C and Swift.** [Learn more.](/usage.html)
 <br/>
 <br/> 
 <br/> 
@@ -63,8 +56,8 @@ projectname: Woodpecker
 <a href="https://github.com/mugginsoft/Fragaria">Fragaria</a>, 
 <a href="https://github.com/enormego/egodatabase">EGODatabase</a>, 
 <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a>,
-<a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a>, 
-<a href="http://www.iconfont.cn/">iconfont</a>
+<a href="http://www.iconfont.cn/">iconfont</a>,
+<a href="https://www.nsdateformatter.com/">NSDateFormatter</a>
 
 <br/>
 

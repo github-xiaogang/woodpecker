@@ -28,12 +28,6 @@ projectname: Woodpecker
 ```
 
 <div class="index-section">
-	<img src="/assets/img/tool_webconsole.png"/> <span><a href="/tools/cnwebconsole.html">Web Console</a></span>
-</div>
-
-**一个简单的Web调试器，可以在线让WebView运行javascript代码**
-
-<div class="index-section">
 	<img src="/assets/img/tool_userdefaults.png"/> <span><a href="/tools/cnuserdefaults.html">User Defaults</a></span>
 </div>
 	
@@ -63,8 +57,8 @@ projectname: Woodpecker
 <a href="https://github.com/mugginsoft/Fragaria">Fragaria</a>, 
 <a href="https://github.com/enormego/egodatabase">EGODatabase</a>, 
 <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a>,
-<a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a>, 
-<a href="http://www.iconfont.cn/">iconfont</a>
+<a href="http://www.iconfont.cn/">iconfont</a>,
+<a href="https://www.nsdateformatter.com/">NSDateFormatter</a>
 
 <br/>
 <br/>

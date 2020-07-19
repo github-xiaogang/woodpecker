@@ -6,11 +6,6 @@ title: Woodpecker使用
 
 <h3 class="index-h3">感谢使用 Woodpecker！</h3>
 
-<br/>
-**Woodpecker**正在参加 **Swift Community Awards 2019** <a href="https://www.hackingwithswift.com/awards">投票</a>，您的支持对Woodpecker的持续开发特别重要，请帮忙在**Best developer tool**填写**Woodpecker**，感谢！
-<br/>
-<br/>
-<br/>
 **Woodpecker支持在真机和模拟器iOS8.0, macOS10.11 及以上使用，Objective-C and Swift.**
 
 在开始前，您需要导入一个framework到您的项目，它会自己启动并连接Woodpecker客户端，如果您使用真机调试，请确认您的应用和Woodpecker在同一网络内。<br/><br/>
@@ -75,7 +70,11 @@ Reason: image not found**
 </a> 立即体验，或者加入 
 <a href="https://t.me/appwoodpecker">
 	<img src="/assets/img/logo_tele.png" width="16" heigh="16"/> telegram群
-</a> 开始讨论
+</a>
+<a href="https://jq.qq.com/?_wv=1027&k=QXuhxDs0">
+	<img src="/assets/img/logo_qq.png" width="16" heigh="16"/> QQ群(303015262)
+</a>
+开始讨论
 <br/>
 <br/>
 <br/>

@@ -8,4 +8,4 @@ title: Contact
 
 * Email: woodpeckerapp@163.com<br/>
 * Twitter:  @appwoodpecker<br/>
-* 微博:  @张小刚哟<br/>
+* Telegram:  https://t.me/appwoodpecker<br/>

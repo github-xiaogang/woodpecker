@@ -3,6 +3,12 @@ layout: subpage
 title: 更新历史
 ---
 
+
+## 1.2.7
+
+- 全新首页，请升级1.2.7 framework进行体验
+- 新增Utility工具集，用来收集开发中的常用小工具
+
 ## 1.2.6
 
 - 新增工具State Master，帮助我们快速备份和恢复App数据，赶紧试试吧~
