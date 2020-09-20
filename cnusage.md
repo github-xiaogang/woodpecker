@@ -37,6 +37,21 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 <br/>
 
 **可能遇到的问题:**
+
+> **iOS 14设备不能正常使用**
+
+<br/>
+iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限，如果您使用最新的Xcode 12构建，请在Info.plist增加下面两项
+
+1. 在`Local Network Usage Description`添加本地网络使用描述
+2. 在`Bonjour Service`列表添加 `_adhp._tcp`
+
+**另外：如果上线时不需要此权限，理论上也不需要单独去删除（只要App没用调用Bonjour, multicast等local network api，是不会弹出权限弹框的）**
+
+<img src="/assets/img/localnetwork.png"/>
+
+<br/>
+
 > **dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
 Reason: image not found**
 
@@ -50,9 +65,8 @@ Reason: image not found**
 
 1. 确认App和Mac在同一wifi下
 2. 请确认App集成的WoodPeckeriOS.framework版本为最新版
-3. iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限
-4. 尝试手动连接Mac客户端，双指长按iOS App界面任意位置弹出连接界面，点击底部搜索找到Mac，然后连接即可
-5. 如果仍然有问题，<a href="/cncontact.html">请点击这里</a>
+3. 尝试手动连接Mac客户端，双指长按iOS App界面任意位置弹出连接界面，点击底部搜索找到Mac，然后连接即可
+4. 如果仍然有问题，<a href="/cncontact.html">请点击这里</a>
 
 <br/>
 > **经常连接到其他人电脑**

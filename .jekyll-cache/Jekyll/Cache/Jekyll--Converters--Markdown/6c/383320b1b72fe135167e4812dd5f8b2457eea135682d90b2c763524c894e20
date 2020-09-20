@@ -1,0 +1,102 @@
+I"�<h3 class="index-h3">感谢使用 Woodpecker！</h3>
+
+<p><strong>Woodpecker支持在真机和模拟器iOS8.0, macOS10.11 及以上使用，Objective-C and Swift.</strong></p>
+
+<p>在开始前，您需要导入一个framework到您的项目，它会自己启动并连接Woodpecker客户端，如果您使用真机调试，请确认您的应用和Woodpecker在同一网络内。<br /><br />
+如果您正在开发Mac app，请访问<a href="/cnusagemac.html">Woodpecker for MacOS</a></p>
+
+<p><strong>1. CocoaPods:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodPeckeriOS', :configurations =&gt; ['Debug']
+</code></pre></div></div>
+<p>如果需要更新，请使用<code class="highlighter-rouge">pod update WoodPeckeriOS</code>
+<br />
+<br /></p>
+
+<p><strong>2. Carthage:</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodPeckeriOS-Carthage.json"
+</code></pre></div></div>
+<p><br /></p>
+
+<p><strong>3. 手动集成:</strong></p>
+
+<ol>
+  <li>下载 <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a></li>
+  <li>导入 WoodPeckeriOS.framework 到您的项目</li>
+  <li>仅在Debug模式下使用，请使用<a href="/cnmanuallink.html">动态链接</a>方式</li>
+</ol>
+
+<p><br /></p>
+
+<p><strong>可能遇到的问题:</strong></p>
+
+<blockquote>
+  <p><strong>iOS 14设备不能正常使用</strong></p>
+</blockquote>
+
+<p><br />
+iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限，如果您使用最新的Xcode构建，请在Info.plist增加下面两项</p>
+
+<ol>
+  <li>在<code class="highlighter-rouge">Local Network Usage Description</code>添加本地网络使用描述</li>
+  <li>在Bonjour Service列表添加 <code class="highlighter-rouge">_adhp._tcp</code></li>
+</ol>
+
+<p><br /></p>
+
+<blockquote>
+  <p><strong>dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
+Reason: image not found</strong></p>
+</blockquote>
+
+<p><br />
+请参考下图将WoodPeckeriOS.framework拖拽到<code class="highlighter-rouge">Build Phases -&gt; Embed Framworks</code>中。</p>
+
+<p><img src="/assets/img/embedframework.png" />
+<br />
+<br /></p>
+<blockquote>
+  <p><strong>Mac端状态一直是waiting connect，连接不上</strong></p>
+</blockquote>
+
+<ol>
+  <li>确认App和Mac在同一wifi下</li>
+  <li>请确认App集成的WoodPeckeriOS.framework版本为最新版</li>
+  <li>尝试手动连接Mac客户端，双指长按iOS App界面任意位置弹出连接界面，点击底部搜索找到Mac，然后连接即可</li>
+  <li>如果仍然有问题，<a href="/cncontact.html">请点击这里</a></li>
+</ol>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>经常连接到其他人电脑</strong></p>
+</blockquote>
+
+<p>你可以设置只连接特定的电脑，<a href="/cnconnection.html">查看更多设置</a></p>
+
+<p><br /></p>
+<blockquote>
+  <p><strong>Xcode 10 Archive 失败 (i386 bitcode 问题)</strong></p>
+</blockquote>
+
+<ol>
+  <li>请使用仅支持真机的framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, 注意这个framework不支持模拟器设备，大多数情况下建议您使用上面的版本。</li>
+</ol>
+
+<p><br />
+您可以下载 
+<a href="https://github.com/appwoodpecker/woodpecker-ios">
+	<img src="/assets/img/logo_github.png" width="16" heigh="16" /> demo
+</a> 立即体验，或者加入 
+<a href="https://t.me/appwoodpecker">
+	<img src="/assets/img/logo_tele.png" width="16" heigh="16" /> telegram群
+</a>
+<a href="https://jq.qq.com/?_wv=1027&amp;k=QXuhxDs0">
+	<img src="/assets/img/logo_qq.png" width="16" heigh="16" /> QQ群(303015262)
+</a>
+开始讨论
+<br />
+<br />
+<br /></p>
+
+:ET

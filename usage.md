@@ -38,6 +38,20 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 **If you have the following problems:**
 
+
+> **Didn't work with iOS 14 devices**
+
+<br/>
+iOS 14 add a new permission for local network usage, please ensure your app has the permission, and if you build with the latest Xcode, please add these two items in Info.plist:
+
+1. Add description in Privacy - Local Network Usage Description
+2. Add _adhp._tcp in Bonjour Service
+
+**In practice, we don't need to remove these keys when build for AppStore, because the privacy alert won't appear until we call any local network api, such as bonjour service or multicast**
+
+<img src="/assets/img/localnetwork.png"/>
+
+<br/>
 > **dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
 Reason: image not found**
 
@@ -50,9 +64,8 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 
 1. please ensure mac and app are in the same wifi.
 2. please ensure WoodPeckeriOS.framework was the latest version.
-3. iOS 14 has added a new permission for local network usage, please ensure your app has the permission.
-4. connect to mac client manually, long press your iOS app's screen with two fingers, you'll see the connection page, try search and connect to your mac client.
-5. If it still doesn't work, <a href="/contact.html">click here</a>.
+3. connect to mac client manually, long press your iOS app's screen with two fingers, you'll see the connection page, try search and connect to your mac client.
+4. If it still doesn't work, <a href="/contact.html">click here</a>.
 
 <br/>
 > **I often connect to other's mac.**
