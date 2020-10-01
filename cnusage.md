@@ -41,10 +41,10 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 > **iOS 14设备不能正常使用**
 
 <br/>
-iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限，如果您使用最新的Xcode 12构建，请在Info.plist增加下面两项
+iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限，如果您使用最新的Xcode 12+构建，请在Info.plist增加下面两项
 
 1. 在`Privacy - Local Network Usage Description`添加本地网络使用描述
-2. 在`Bonjour Service`列表添加 `_adhp._tcp`
+2. 在`Bonjour services`列表添加 `_adhp._tcp`
 
 <img src="/assets/img/localnetwork.png"/>
 

@@ -42,10 +42,10 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 > **Didn't work with iOS 14 devices**
 
 <br/>
-iOS 14 add a new permission for local network usage, please ensure your app has the permission, and if you build with the latest Xcode, please add these two items in Info.plist:
+iOS 14 add a new privacy about local network usage, please ensure your app has the permission, and if you build with the Xcode 12+, please add these two items in Info.plist:
 
 1. Add description in `Privacy - Local Network Usage Description`
-2. Add `_adhp._tcp` in Bonjour Service list
+2. Add `_adhp._tcp` in Bonjour services list
 
 <img src="/assets/img/localnetwork.png"/>
 
