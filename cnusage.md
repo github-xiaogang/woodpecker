@@ -6,7 +6,7 @@ title: Woodpecker使用
 
 <h3 class="index-h3">感谢使用 Woodpecker！</h3>
 
-**Woodpecker支持在真机和模拟器iOS8.0, macOS10.11 及以上使用，Objective-C and Swift.**
+**Woodpecker支持在真机和模拟器iOS9.0, macOS10.11 及以上使用，Objective-C and Swift.**
 
 在开始前，您需要导入一个framework到您的项目，它会自己启动并连接Woodpecker客户端，如果您使用真机调试，请确认您的应用和Woodpecker在同一网络内。<br/><br/>
 如果您正在开发Mac app，请访问<a href="/cnusagemac.html">Woodpecker for MacOS</a>
@@ -43,12 +43,12 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 <br/>
 iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限，如果您使用最新的Xcode 12构建，请在Info.plist增加下面两项
 
-1. 在`Local Network Usage Description`添加本地网络使用描述
+1. 在`Privacy - Local Network Usage Description`添加本地网络使用描述
 2. 在`Bonjour Service`列表添加 `_adhp._tcp`
 
-**另外：如果上线时不需要此权限，理论上也不需要单独去删除（只要App没用调用Bonjour, multicast等local network api，是不会弹出权限弹框的）**
-
 <img src="/assets/img/localnetwork.png"/>
+
+**另外：如果上线时不需要此权限，理论上也不需要单独去删除（只要App没用调用Bonjour, multicast等local network api，是不会弹出权限弹框的）**
 
 <br/>
 

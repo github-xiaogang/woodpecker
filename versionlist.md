@@ -3,6 +3,10 @@ layout: subpage
 title: Changelog
 ---
 
+## 1.2.9
+
+- In this update, we have made some functional optimizations based on the feedback from the developers, and added functions such as clearing caches, so try upgrading now!
+
 ## 1.2.8
 
 - Add new tool Firebase Remote Config, with this tool we can browser config items easily and fetch latest update from firebase immediately.  If you use firebase in your app, you should never miss it.

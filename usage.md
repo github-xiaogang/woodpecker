@@ -6,7 +6,7 @@ title: Woodpecker Usage
 
 <h3 class="index-h3">Thanks for using Woodpecker！</h3>
 
-**Woodpecker Supports both physical device and simulator iOS8.0+, Objective-C and Swift.**
+**Woodpecker Supports both physical device and simulator iOS9.0+, Objective-C and Swift.**
 
 To use Woodpecker, you need import a framework to your project, then it will start and connect to Woodpecker client automatically. If you are work with physical device, please ensure your app and Woodpecker are in the same network.<br/>
 
@@ -44,12 +44,12 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 <br/>
 iOS 14 add a new permission for local network usage, please ensure your app has the permission, and if you build with the latest Xcode, please add these two items in Info.plist:
 
-1. Add description in Privacy - Local Network Usage Description
-2. Add _adhp._tcp in Bonjour Service
-
-**In practice, we don't need to remove these keys when build for AppStore, because the privacy alert won't appear until we call any local network api, such as bonjour service or multicast**
+1. Add description in `Privacy - Local Network Usage Description`
+2. Add `_adhp._tcp` in Bonjour Service list
 
 <img src="/assets/img/localnetwork.png"/>
+
+**In practice, we don't need to remove these keys when build for AppStore, because the privacy alert won't appear until we call any local network api, such as bonjour service or multicast**
 
 <br/>
 > **dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
