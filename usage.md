@@ -40,10 +40,7 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 **4. Jailbreak Setup:**
 
 1. Please add cydia source <a href="https://todayios-cydia.github.io/cydia/">TSCydia</a>, pick the TSWoodPeckeriOSLoader, it supports iOS 12.0+
-2. If you are using iOS14+, please ensure your app contains these two items in Info.plist, and has the local network privacy permission:
-- Add description in `Privacy - Local Network Usage Description`
-- Add `_adhp._tcp` in Bonjour services list
-3. Thanks <a href="https://github.com/todayios-cydia">manajay</a> who provides such an amazing tool.
+2. Thanks <a href="https://github.com/todayios-cydia">manajay</a> who provides such an amazing tool.
 
 
 <br>

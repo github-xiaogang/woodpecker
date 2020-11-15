@@ -40,11 +40,7 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 **4. 越狱插件:**
 
 1. 请添加<a href="https://todayios-cydia.github.io/cydia/"> TSCydia </a>cydia源，选择TSWoodPeckeriOSLoader，支持iOS 12.0+
-2. 如果您使用iOS14+系统调试，需要先确认App中的Info.plist包含下面本地网络访问权限相关key
-- 在`Privacy - Local Network Usage Description`添加本地网络使用描述
-- 在`Bonjour services`列表添加 `_adhp._tcp`
-3. 感谢插件作者<a href="https://github.com/todayios-cydia"> manajay </a>，源中他同时提供了iOS调试工具Lookin和Flex的越狱插件
-
+2. 感谢作者<a href="https://github.com/todayios-cydia"> manajay </a>，源中他同时提供了iOS调试工具Lookin和Flex的越狱插件
 
 <br>
 
