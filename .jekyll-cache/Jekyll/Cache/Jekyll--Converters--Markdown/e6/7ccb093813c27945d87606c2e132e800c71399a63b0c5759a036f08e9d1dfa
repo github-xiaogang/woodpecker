@@ -1,11 +1,6 @@
-I"�<h3 class="index-h3">感谢使用 Woodpecker！</h3>
+I"<h3 class="index-h3">感谢使用 Woodpecker！</h3>
 
-<p><br />
-<strong>Woodpecker</strong>正在参加 <strong>Swift Community Awards 2019</strong> <a href="https://www.hackingwithswift.com/awards">投票</a>，您的支持对Woodpecker的持续开发特别重要，请帮忙在<strong>Best developer tool</strong>填写<strong>Woodpecker</strong>，感谢！
-<br />
-<br />
-<br />
-<strong>Woodpecker支持在真机和模拟器iOS8.0, macOS10.11 及以上使用，Objective-C and Swift.</strong></p>
+<p><strong>Woodpecker支持在真机和模拟器iOS9.0, macOS10.11 及以上使用，Objective-C and Swift.</strong></p>
 
 <p>在开始前，您需要导入一个framework到您的项目，它会自己启动并连接Woodpecker客户端，如果您使用真机调试，请确认您的应用和Woodpecker在同一网络内。<br /><br />
 如果您正在开发Mac app，请访问<a href="/cnusagemac.html">Woodpecker for MacOS</a></p>
@@ -34,7 +29,35 @@
 
 <p><br /></p>
 
+<p><strong>4. 越狱插件:</strong></p>
+
+<ol>
+  <li><a href="https://todayios-cydia.github.io/cydia/"> TSCydia </a>，选择TSWoodPeckeriOSLoader，支持iOS 12.0+，感谢作者<a href="https://github.com/todayios-cydia"> manajay </a>，他同时提供了iOS调试工具Lookin和Flex的插件</li>
+  <li><a href="https://tinxie1115.github.io/"> TinXie’s Repository </a>，感谢作者 <a href="https://s2339956.github.io/about/"> TinXie </a></li>
+</ol>
+
+<p><br /></p>
+
 <p><strong>可能遇到的问题:</strong></p>
+
+<blockquote>
+  <p><strong>iOS 14设备不能正常使用</strong></p>
+</blockquote>
+
+<p><br />
+iOS 14系统增加了本地网络访问权限开关，请确认您App拥有此权限，如果您使用最新的Xcode 12+构建，请在Info.plist增加下面两项</p>
+
+<ol>
+  <li>在<code class="highlighter-rouge">Privacy - Local Network Usage Description</code>添加本地网络使用描述</li>
+  <li>在<code class="highlighter-rouge">Bonjour services</code>列表添加 <code class="highlighter-rouge">_adhp._tcp</code></li>
+</ol>
+
+<p><img src="/assets/img/localnetwork.png" /></p>
+
+<p><strong>另外：如果上线时不需要此权限，理论上也不需要单独去删除（只要App没用调用Bonjour, multicast等local network api，是不会弹出权限弹框的）</strong></p>
+
+<p><br /></p>
+
 <blockquote>
   <p><strong>dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
 Reason: image not found</strong></p>
@@ -80,7 +103,11 @@ Reason: image not found</strong></p>
 </a> 立即体验，或者加入 
 <a href="https://t.me/appwoodpecker">
 	<img src="/assets/img/logo_tele.png" width="16" heigh="16" /> telegram群
-</a> 开始讨论
+</a>
+<a href="https://jq.qq.com/?_wv=1027&amp;k=QXuhxDs0">
+	<img src="/assets/img/logo_qq.png" width="16" heigh="16" /> QQ群(303015262)
+</a>
+开始讨论
 <br />
 <br />
 <br /></p>

@@ -39,8 +39,8 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 **4. Jailbreak Setup:**
 
-1. Please add cydia source <a href="https://todayios-cydia.github.io/cydia/">TSCydia</a>, pick the TSWoodPeckeriOSLoader, it supports iOS 12.0+
-2. Thanks <a href="https://github.com/todayios-cydia">manajay</a> who provides such an amazing tool.
+1. <a href="https://todayios-cydia.github.io/cydia/"> TSCydia </a>, select the TSWoodPeckeriOSLoader, it supports iOS 12.0+. Created by <a href="https://github.com/todayios-cydia">manajay</a>
+2. <a href="https://tinxie1115.github.io/"> TinXie's Repository </a>, Created by <a href="https://s2339956.github.io/about/"> TinXie </a>
 
 
 <br>

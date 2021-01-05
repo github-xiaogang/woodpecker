@@ -39,8 +39,9 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 **4. 越狱插件:**
 
-1. 请添加<a href="https://todayios-cydia.github.io/cydia/"> TSCydia </a>cydia源，选择TSWoodPeckeriOSLoader，支持iOS 12.0+
-2. 感谢作者<a href="https://github.com/todayios-cydia"> manajay </a>，源中他同时提供了iOS调试工具Lookin和Flex的越狱插件
+1. <a href="https://todayios-cydia.github.io/cydia/"> TSCydia </a>，选择TSWoodPeckeriOSLoader，支持iOS 12.0+，感谢作者<a href="https://github.com/todayios-cydia"> manajay </a>，他同时提供了iOS调试工具Lookin和Flex的插件
+2. <a href="https://tinxie1115.github.io/"> TinXie's Repository </a>，感谢作者 <a href="https://s2339956.github.io/about/"> TinXie </a>
+
 
 <br>
 
