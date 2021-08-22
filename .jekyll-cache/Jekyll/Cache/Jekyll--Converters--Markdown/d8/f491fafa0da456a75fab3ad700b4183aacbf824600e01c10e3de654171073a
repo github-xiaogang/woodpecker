@@ -1,28 +1,28 @@
-I"�<p>1.Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>，then copy WoodPeckeriOS.framework to the root directory of your project in Finder.</p>
+I"�<p>1.Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>，then copy WoodPeckeriOS.framework to the root directory of your project in Finder.</p>
 
 <p><img src="/assets/img/link1.png" /></p>
 
 <p>2.Open your project in Xcode, then navigate to the Build Setting of your target, and add the following to the Debug configuration of the Framework Search Paths (FRAMEWORK_SEARCH_PATHS) setting:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(inherited) $(SRCROOT)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(inherited) $(SRCROOT)
 </code></pre></div></div>
 <p><img src="/assets/img/link2.png" /></p>
 
 <p>3.Still in the Build Settings tab, add the following to the Debug configuration of the Other Linker Flags (OTHER_LDFLAGS) setting:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-ObjC -weak_framework WoodPeckeriOS
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-ObjC -weak_framework WoodPeckeriOS
 </code></pre></div></div>
 <p><img src="/assets/img/link3.png" /></p>
 
 <p>4.Still in the Build Settings tab, add the following to the Debug configuration of the Runpath Search Paths (LD_RUNPATH_SEARCH_PATHS) if it is not already present:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(inherited) @executable_path/Frameworks
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$(inherited) @executable_path/Frameworks
 </code></pre></div></div>
 <p><img src="/assets/img/link4.png" /></p>
 
 <p>5.Select the Build Phases tab and add a new Run Script phase — name it “Integrate Woodpecker” or something suitably descriptive. Paste in the following shell script:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># If configuration is not Debug, skip this script.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># If configuration is not Debug, skip this script.
 [ "${CONFIGURATION}" != "Debug" ] &amp;&amp; exit 0
 
 FRAMEWORK_FILENAME="WoodPeckeriOS.framework"

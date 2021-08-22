@@ -1,4 +1,4 @@
-I"�<h3 id="woodpecker提供了mac和app之间的通信渠道并提供了简单的通信api开发者可以轻松定制自己的插件工具">Woodpecker提供了Mac和App之间的通信渠道，并提供了简单的通信Api，开发者可以轻松定制自己的插件工具。</h3>
+I"<h3 id="woodpecker提供了mac和app之间的通信渠道并提供了简单的通信api开发者可以轻松定制自己的插件工具">Woodpecker提供了Mac和App之间的通信渠道，并提供了简单的通信Api，开发者可以轻松定制自己的插件工具。</h3>
 
 <h2 id="创建插件">创建插件:</h2>
 
@@ -24,7 +24,7 @@
 
 <p>在Woodpecker中ADHService类代表service对象, 我们创建ADHService的子类EchoService。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface EchoService : ADHService
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface EchoService : ADHService
 
 @end
 
@@ -33,7 +33,7 @@
 <p>每一个service有名称(name)和它的动作列表(actionList)
 我们EchoService名称设为“adh.EchoService”，并定义一个动作”echo”。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation EchoService
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation EchoService
 
 + (NSString *)serviceName
 {
@@ -69,7 +69,7 @@ request参数可以包含一个NSDictionary类型的body和NSData类型的payloa
 
 <p>在使用EchoService之前，你需要先在App注册它</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)viewDidLoad {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)viewDidLoad {
     [super viewDidLoad];
 
     [[ADHOrganizer organizer] registerService:[EchoService service]];
@@ -97,7 +97,7 @@ request参数可以包含一个NSDictionary类型的body和NSData类型的payloa
 
 <p>你可以填写4个字段：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Service: 将要调用的service名称，这里我们选择"adh.EchoService"。
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Service: 将要调用的service名称，这里我们选择"adh.EchoService"。
 
 Action: 将要调用的动作名称，这里我们选择"echo"。
 
@@ -111,7 +111,7 @@ Payload: 你可以给请求添加一个NSData类型的参数(这里请选择一�
 <p>一个web插件实际上是一个在Plugin目录的bundle包（插件目录可以在客户端的Plugin -&gt; Home找到）。
 插件bundle至少应该包含两个文件：</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.html （插件入口文件)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.html （插件入口文件)
 icon.png (插件的图标，将在工具栏显示)
 </code></pre></div></div>
 

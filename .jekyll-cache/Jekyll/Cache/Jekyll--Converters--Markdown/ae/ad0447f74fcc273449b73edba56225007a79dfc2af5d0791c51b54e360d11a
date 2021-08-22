@@ -1,4 +1,4 @@
-I"�<p><strong>无需断点，调试Notification</strong></p>
+I"�<p><strong>无需断点，调试Notification</strong></p>
 
 <ol>
   <li>无需断点，随时随地查看收到的Notification详细信息（支持APNS和本地通知）；</li>
@@ -6,6 +6,6 @@
   <li>查看应用Notification相关基本信息，比如APNS token和各种权限。</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>注意：Notification功能仅支持iOS10以上
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>注意：Notification功能仅支持iOS10以上
 </code></pre></div></div>
 :ET

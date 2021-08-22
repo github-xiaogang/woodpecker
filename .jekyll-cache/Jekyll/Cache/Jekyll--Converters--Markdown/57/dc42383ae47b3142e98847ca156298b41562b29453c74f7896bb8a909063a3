@@ -1,4 +1,4 @@
-I"�<h3 class="index-h3">Thanks for using Woodpecker！</h3>
+I"�<h3 class="index-h3">Thanks for using Woodpecker！</h3>
 
 <p><strong>Woodpecker Supports both physical device and simulator iOS9.0+, Objective-C and Swift.</strong></p>
 
@@ -8,23 +8,23 @@
 
 <p><strong>1. CocoaPods:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodPeckeriOS', :configurations =&gt; ['Debug']
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodPeckeriOS', :configurations =&gt; ['Debug']
 </code></pre></div></div>
-<p>Use <code class="highlighter-rouge">pod update WoodPeckeriOS</code> to update the latest version.
+<p>Use <code class="language-plaintext highlighter-rouge">pod update WoodPeckeriOS</code> to update the latest version.
 <br />
 <br /></p>
 
 <p><strong>2. Carthage:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodPeckeriOS-Carthage.json"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodPeckeriOS-Carthage.json"
 </code></pre></div></div>
 <p><br /></p>
 
 <p><strong>3. Manual Setup:</strong></p>
 
 <ol>
-  <li>Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a></li>
-  <li>Import WoodPeckeriOS.framework to your project.</li>
+  <li>Download <a href="/assets/framework/WoodPeckeriOS.xcframework.zip">WoodPeckeriOS.xcframework</a></li>
+  <li>Import WoodPeckeriOS.xcframework to your project.</li>
   <li>If you like to use only in Debug configuration, please <a href="/manuallink.html">check this</a></li>
 </ol>
 
@@ -49,8 +49,8 @@
 iOS 14 add a new privacy about local network usage, please ensure your app has the permission, and if you build with the Xcode 12+, please add these two items in Info.plist:</p>
 
 <ol>
-  <li>Add description in <code class="highlighter-rouge">Privacy - Local Network Usage Description</code></li>
-  <li>Add <code class="highlighter-rouge">_adhp._tcp</code> in Bonjour services list</li>
+  <li>Add description in <code class="language-plaintext highlighter-rouge">Privacy - Local Network Usage Description</code></li>
+  <li>Add <code class="language-plaintext highlighter-rouge">_adhp._tcp</code> in Bonjour services list</li>
 </ol>
 
 <p><img src="/assets/img/localnetwork.png" /></p>
@@ -59,12 +59,12 @@ iOS 14 add a new privacy about local network usage, please ensure your app has t
 
 <p><br /></p>
 <blockquote>
-  <p><strong>dyld: Library not loaded: @rpath/WoodPeckeriOS.framework/WoodPeckeriOS
+  <p><strong>dyld: Library not loaded: @rpath/WoodPeckeriOS.xcframework/WoodPeckeriOS
 Reason: image not found</strong></p>
 </blockquote>
 
 <p><br />
-Please drag WoodPeckeriOS.framework to <code class="highlighter-rouge">Build Phases -&gt; Embed Framworks</code>.</p>
+Please drag WoodPeckeriOS.xcframework to <code class="language-plaintext highlighter-rouge">Build Phases -&gt; Embed Framworks</code>.</p>
 
 <p><img src="/assets/img/embedframework.png" />
 <br /></p>
@@ -74,7 +74,7 @@ Please drag WoodPeckeriOS.framework to <code class="highlighter-rouge">Build Pha
 
 <ol>
   <li>please ensure mac and app are in the same wifi.</li>
-  <li>please ensure WoodPeckeriOS.framework was the latest version.</li>
+  <li>please ensure WoodPeckeriOS.xcframework was the latest version.</li>
   <li>connect to mac client manually, long press your iOS app’s screen with two fingers, you’ll see the connection page, try search and connect to your mac client.</li>
   <li>If it still doesn’t work, <a href="/contact.html">click here</a>.</li>
 </ol>
@@ -85,15 +85,6 @@ Please drag WoodPeckeriOS.framework to <code class="highlighter-rouge">Build Pha
 </blockquote>
 
 <p>You could make some options to specify which client you’d like to connect, <a href="/connection.html">see advanced usage</a>.</p>
-
-<p><br /></p>
-<blockquote>
-  <p><strong>Xcode 10 Archive failed (i386 bitcode problem)</strong></p>
-</blockquote>
-
-<ol>
-  <li>please use the device arch only framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, it’s full bitcode enabled. But I would suggest you use the full version above in most situations.</li>
-</ol>
 
 <p><br />
 You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios"><img src="/assets/img/logo_github.png" width="16" heigh="16" /> demo app </a>or talk with others at 

@@ -1,4 +1,4 @@
-I"�<p><strong>集成了Woodpecker framework的App在启动时，会查找同一网络环境内的Woodpecker客户端，并尝试自动连接。</strong><br />
+I"<p><strong>集成了Woodpecker framework的App在启动时，会查找同一网络环境内的Woodpecker客户端，并尝试自动连接。</strong><br />
 <strong>您可以通过设置，让App只连接特定的电脑：</strong></p>
 
 <ul>
@@ -34,7 +34,7 @@
 <strong>如果您需要在非Debug模式使用Woodpecker，并希望设置连接参数，请在应用启动时设置如下：</strong></p>
 
 <p>Objective C</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //主机名
     [[NSUserDefaults standardUserDefaults] setObject:@"李雷" forKey:@"ADHHostName"];
@@ -46,7 +46,7 @@
 </code></pre></div></div>
 <p>Swift</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {
     //主机名
     UserDefaults.standard.set("李雷", forKey: "ADHHostName")
@@ -59,7 +59,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 <p><br /></p>
 
 <p><strong>可能遇到的问题:</strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mac端状态一直是waiting connect，连接不上
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mac端状态一直是waiting connect，连接不上
 </code></pre></div></div>
 <ol>
   <li>确认您的App和Wooodpecker客户端在同一网络环境</li>

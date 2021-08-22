@@ -1,4 +1,4 @@
-I"�<p><strong>Debugging Notifications without any breakpoint</strong></p>
+I"<p><strong>Debugging Notifications without any breakpoint</strong></p>
 
 <ol>
   <li>check received notifications without breakpoint at anywhere, anytime. (support both APNS and local notification)</li>
@@ -6,6 +6,6 @@
   <li>check information about Notification, such as APNS device token, authorization status.</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tips：this tool only supports iOS 10+.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tips：this tool only supports iOS 10+.
 </code></pre></div></div>
 :ET

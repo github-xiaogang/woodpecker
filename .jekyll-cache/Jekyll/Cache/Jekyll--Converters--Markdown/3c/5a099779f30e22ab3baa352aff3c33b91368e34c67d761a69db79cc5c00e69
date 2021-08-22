@@ -1,4 +1,4 @@
-I"p<p><strong>App that integrated Woodpecker’s framework will search Woodpecker clients in the same network, and connect to them automatically.</strong><br /><br />
+I"�<p><strong>App that integrated Woodpecker’s framework will search Woodpecker clients in the same network, and connect to them automatically.</strong><br /><br />
 <strong>You could make some options to specify which client you’d like to connect.</strong></p>
 
 <ul>
@@ -35,7 +35,7 @@
 <strong>If you need to use Woodpecker not only in debug mode, and need to set the options, please do the following during app launch:</strong></p>
 
 <p>Objective C</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //host name
     [[NSUserDefaults standardUserDefaults] setObject:@"David" forKey:@"ADHHostName"];
@@ -48,7 +48,7 @@
 
 <p>Swift</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -&gt; Bool {
     //host name
     UserDefaults.standard.set("David", forKey: "ADHHostName")

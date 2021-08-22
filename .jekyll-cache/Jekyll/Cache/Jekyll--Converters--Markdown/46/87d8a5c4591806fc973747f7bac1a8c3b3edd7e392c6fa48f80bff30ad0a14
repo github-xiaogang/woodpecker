@@ -1,4 +1,4 @@
-I"�<h3 class="index-h3">感谢使用 Woodpecker！</h3>
+I"B<h3 class="index-h3">感谢使用 Woodpecker！</h3>
 
 <p><strong>Woodpecker支持在真机和模拟器iOS8.0和MacOS10.11及以上使用，Objective-C and Swift.</strong></p>
 
@@ -7,15 +7,15 @@
 
 <p><strong>1. CocoaPods:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodpeckerMacOS', :configurations =&gt; ['Debug']
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodpeckerMacOS', :configurations =&gt; ['Debug']
 </code></pre></div></div>
-<p>如果需要更新，请使用<code class="highlighter-rouge">pod update WoodpeckerMacOS</code>
+<p>如果需要更新，请使用<code class="language-plaintext highlighter-rouge">pod update WoodpeckerMacOS</code>
 <br />
 <br /></p>
 
 <p><strong>2. Carthage:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodpeckerMacOS-Carthage.json"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodpeckerMacOS-Carthage.json"
 </code></pre></div></div>
 <p><br /></p>
 
@@ -47,7 +47,7 @@ Reason: image not found</strong></p>
 </blockquote>
 
 <p><br />
-请参考下图将WoodpeckerMacOS.framework拖拽到<code class="highlighter-rouge">Build Phases -&gt; Embed Framworks</code>中。</p>
+请参考下图将WoodpeckerMacOS.framework拖拽到<code class="language-plaintext highlighter-rouge">Build Phases -&gt; Embed Framworks</code>中。</p>
 
 <p><img src="/assets/img/embedframeworkmac.png" />
 <br />

@@ -30,8 +30,8 @@ binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/Wo
 
 **3. Manual Setup:**
 
-1. Download <a href="/assets/framework/WoodPeckeriOS.framework.zip">WoodPeckeriOS.framework</a>
-2. Import WoodPeckeriOS.framework to your project.
+1. Download <a href="/assets/framework/WoodPeckeriOS.xcframework.zip">WoodPeckeriOS.xcframework</a>
+2. Import WoodPeckeriOS.xcframework to your project.
 3. If you like to use only in Debug configuration, please <a href="/manuallink.html">check this</a>
 
 <br/>
@@ -65,14 +65,14 @@ iOS 14 add a new privacy about local network usage, please ensure your app has t
 Reason: image not found**
 
 <br/>
-Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
+Please drag WoodPeckeriOS.xcframework to `Build Phases -> Embed Framworks`, then select Embed & Sign.
 
 <img src="/assets/img/embedframework.png"/>
 <br/>
 > **Mac client is always "waiting connect"**
 
 1. please ensure mac and app are in the same wifi.
-2. please ensure WoodPeckeriOS.framework was the latest version.
+2. please ensure WoodPeckeriOS.xcframework was the latest version.
 3. connect to mac client manually, long press your iOS app's screen with two fingers, you'll see the connection page, try search and connect to your mac client.
 4. If it still doesn't work, <a href="/contact.html">click here</a>.
 
@@ -80,11 +80,6 @@ Please drag WoodPeckeriOS.framework to `Build Phases -> Embed Framworks`.
 > **I often connect to other's mac.**
 
  You could make some options to specify which client you'd like to connect, <a href="/connection.html">see advanced usage</a>.
-
-<br/>
-> **Xcode 10 Archive failed (i386 bitcode problem)**
-
-1. please use the device arch only framework <a href="/assets/framework/WoodPeckeriOS_device.framework.zip">WoodPeckeriOS_device.framework</a>, it's full bitcode enabled. But I would suggest you use the full version above in most situations.
 
 <br/>
 You can start with <a href="https://github.com/appwoodpecker/woodpecker-ios"><img src="/assets/img/logo_github.png" width="16" heigh="16"/> demo app </a>or talk with others at 

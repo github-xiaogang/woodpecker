@@ -1,4 +1,4 @@
-I"<h3 id="woodpecker-provides-a-communication-channel-between-mac-client-and-app-and-defines-a-friendly-api-for-developer-so-we-can-custom-a-plugin-tool-very-easily">Woodpecker provides a communication channel between mac client and app, and defines a friendly Api for developer, so we can custom a plugin tool very easily.</h3>
+I"x<h3 id="woodpecker-provides-a-communication-channel-between-mac-client-and-app-and-defines-a-friendly-api-for-developer-so-we-can-custom-a-plugin-tool-very-easily">Woodpecker provides a communication channel between mac client and app, and defines a friendly Api for developer, so we can custom a plugin tool very easily.</h3>
 
 <h2 id="create-a-plugin">Create a plugin:</h2>
 
@@ -24,7 +24,7 @@
 
 <p>ADHService class represent a service in woodpecker, so we create a subclass of ADHService named “EchoService”.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface EchoService : ADHService
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@interface EchoService : ADHService
 
 @end
 
@@ -33,7 +33,7 @@
 <p>A service has a name, and has a list of action.
 here we named it “adh.EchoService”, and define an action named “echo”.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation EchoService
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@implementation EchoService
 
 + (NSString *)serviceName
 {
@@ -69,7 +69,7 @@ and you must call [request finish] or other finsh method to response the request
 
 <p>before use EchoService, you should register it.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)viewDidLoad {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)viewDidLoad {
     [super viewDidLoad];
 
     [[ADHOrganizer organizer] registerService:[EchoService service]];
@@ -97,7 +97,7 @@ and you must call [request finish] or other finsh method to response the request
 
 <p>There are four form you should provide:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Service: which service you want call, here we choose "adh.EchoService".
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Service: which service you want call, here we choose "adh.EchoService".
 
 Action: which action you want call, here we choose "echo".
 
@@ -111,7 +111,7 @@ Payload: you can pass a data payload(here should be a file) to the request, and 
 <p>A web plugin is a bundle stored at the Plugin directory (could be find at the Plugin -&gt; Home menu). 
 A plugin bundle should at least has two files:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.html （the plugin's index page)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>index.html （the plugin's index page)
 icon.png (the icon will show at tool bar)
 </code></pre></div></div>
 

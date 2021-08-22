@@ -1,4 +1,4 @@
-I"b<h3 class="index-h3">Thanks for using Woodpecker！</h3>
+I"�<h3 class="index-h3">Thanks for using Woodpecker！</h3>
 
 <p><strong>Woodpecker Supports both physical device and simulator iOS8.0+, MacOS10.11+, Objective-C and Swift.</strong></p>
 
@@ -6,15 +6,15 @@
 
 <p><strong>1. CocoaPods:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodpeckerMacOS', :configurations =&gt; ['Debug']
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pod 'WoodpeckerMacOS', :configurations =&gt; ['Debug']
 </code></pre></div></div>
-<p>Use <code class="highlighter-rouge">pod update WoodpeckerMacOS</code> to update the latest version.
+<p>Use <code class="language-plaintext highlighter-rouge">pod update WoodpeckerMacOS</code> to update the latest version.
 <br />
 <br /></p>
 
 <p><strong>2. Carthage:</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodpeckerMacOS-Carthage.json"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>binary "https://raw.githubusercontent.com/appwoodpecker/woodpecker-ios/master/WoodpeckerMacOS-Carthage.json"
 </code></pre></div></div>
 <p><br /></p>
 
@@ -47,7 +47,7 @@ Reason: image not found</strong></p>
 </blockquote>
 
 <p><br />
-Please drag WoodpeckerMacOS.framework to <code class="highlighter-rouge">Build Phases -&gt; Embed Framworks</code>.</p>
+Please drag WoodpeckerMacOS.framework to <code class="language-plaintext highlighter-rouge">Build Phases -&gt; Embed Framworks</code>.</p>
 
 <p><img src="/assets/img/embedframeworkmac.png" />
 <br /></p>
