@@ -23,6 +23,7 @@ You could set the following parameters：
  -  **ADHHostName**,  your hostname, such as "David" (**You can find it at Woodpecker's Help - Client Info Menu**)
  -  **ADHHostAddress**,  your host address，such as "192.168.1.101:9999"    
  -  **ADHAutoConnectEnabled**,  whether automatically connect during the app launch，default YES
+ -  **ADHUIGestureEnabled**  whether support gesture，default YES
 <br/>
 
 > **Tips：**<br/>

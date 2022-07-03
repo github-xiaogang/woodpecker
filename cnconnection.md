@@ -21,6 +21,7 @@ title: Woodpecker连接
  -  **ADHHostName**  电脑名 如“李雷”（**可以在Woodpecker菜单 Help - Client Info找到**）
  -  **ADHHostAddress**  ip和端口，如“192.168.1.101:9999”    
  -  **ADHAutoConnectEnabled**  是否自动连接，默认YES，自动连接
+ -  **ADHUIGestureEnabled**  是否支持手势，默认YES，双指长按展示链接页面
 <br/>
 
 > **注意：**<br/>
